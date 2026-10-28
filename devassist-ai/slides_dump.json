@@ -1,0 +1,1907 @@
+[
+  {
+    "slide_num": 1,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 1",
+        "text": "DealGuard AI – AI-Powered M&A Due Diligence Platform",
+        "left": 0.7,
+        "top": 1.1,
+        "w": 8.6,
+        "h": 1.4
+      },
+      {
+        "index": 2,
+        "name": "Text 4",
+        "text": "Team Members: Samradh ,Prashant ,Chirag",
+        "left": 0.77,
+        "top": 3.85,
+        "w": 4.01,
+        "h": 0.48
+      },
+      {
+        "index": 4,
+        "name": "Text 6",
+        "text": "University: BML Munjal University",
+        "left": 5.12,
+        "top": 3.85,
+        "w": 4.01,
+        "h": 0.48
+      },
+      {
+        "index": 6,
+        "name": "Text 8",
+        "text": "Course / Subject: AI DevOps",
+        "left": 0.77,
+        "top": 4.45,
+        "w": 4.01,
+        "h": 0.48
+      },
+      {
+        "index": 8,
+        "name": "Text 10",
+        "text": "Mentor: Naveen Singh",
+        "left": 5.12,
+        "top": 4.45,
+        "w": 4.01,
+        "h": 0.48
+      }
+    ]
+  },
+  {
+    "slide_num": 2,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "Problem → Aim: Why DealGuard AI?",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "2",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 2,
+        "name": "Text 2",
+        "text": "The problem",
+        "left": 0.5,
+        "top": 1.05,
+        "w": 3.0,
+        "h": 0.3
+      },
+      {
+        "index": 4,
+        "name": "Text 4",
+        "text": "Hundreds of Documents",
+        "left": 0.57,
+        "top": 1.42,
+        "w": 2.86,
+        "h": 0.48
+      },
+      {
+        "index": 7,
+        "name": "Text 7",
+        "text": "Manual Review",
+        "left": 0.57,
+        "top": 2.03,
+        "w": 2.86,
+        "h": 0.48
+      },
+      {
+        "index": 10,
+        "name": "Text 10",
+        "text": "Multiple Domains",
+        "left": 0.57,
+        "top": 2.64,
+        "w": 2.86,
+        "h": 0.48
+      },
+      {
+        "index": 13,
+        "name": "Text 13",
+        "text": "Hidden / Connected Risks",
+        "left": 0.57,
+        "top": 3.25,
+        "w": 2.86,
+        "h": 0.48
+      },
+      {
+        "index": 16,
+        "name": "Text 16",
+        "text": "Long Analysis Time",
+        "left": 0.57,
+        "top": 3.86,
+        "w": 2.86,
+        "h": 0.48
+      },
+      {
+        "index": 17,
+        "name": "Text 17",
+        "text": "Contracts, financial, HR, technology, cybersecurity, tax, regulatory and ESG documents – reviewed manually, across domains.",
+        "left": 0.5,
+        "top": 4.4,
+        "w": 3.0,
+        "h": 0.75
+      },
+      {
+        "index": 18,
+        "name": "Text 18",
+        "text": "The aim",
+        "left": 4.0,
+        "top": 1.05,
+        "w": 5.5,
+        "h": 0.3
+      },
+      {
+        "index": 20,
+        "name": "Text 20",
+        "text": "DealGuard AI aims to accelerate and structure M&A due diligence by using multiple specialized AI agents to analyze company documents across business domains, identify evidence-backed risks, connect cross-domain risks, validate findings, and present results in a decision-support dashboard.",
+        "left": 4.07,
+        "top": 1.42,
+        "w": 5.36,
+        "h": 1.7
+      },
+      {
+        "index": 22,
+        "name": "Text 22",
+        "text": "FAST",
+        "left": 4.07,
+        "top": 3.25,
+        "w": 1.16,
+        "h": 0.4
+      },
+      {
+        "index": 24,
+        "name": "Text 24",
+        "text": "MULTI-DOMAIN",
+        "left": 5.47,
+        "top": 3.25,
+        "w": 1.16,
+        "h": 0.4
+      },
+      {
+        "index": 26,
+        "name": "Text 26",
+        "text": "EVIDENCE-BACKED",
+        "left": 6.84,
+        "top": 3.26,
+        "w": 1.16,
+        "h": 0.4
+      },
+      {
+        "index": 28,
+        "name": "Text 28",
+        "text": "HUMAN-IN-THE-LOOP",
+        "left": 8.27,
+        "top": 3.25,
+        "w": 1.16,
+        "h": 0.4
+      },
+      {
+        "index": 30,
+        "name": "Text 30",
+        "text": "Faster first-pass analysis",
+        "left": 4.07,
+        "top": 3.8,
+        "w": 1.66,
+        "h": 0.6
+      },
+      {
+        "index": 32,
+        "name": "Text 32",
+        "text": "Domain-specific risk identification",
+        "left": 5.92,
+        "top": 3.8,
+        "w": 1.66,
+        "h": 0.6
+      },
+      {
+        "index": 34,
+        "name": "Text 34",
+        "text": "Cross-domain risk identification",
+        "left": 7.77,
+        "top": 3.8,
+        "w": 1.66,
+        "h": 0.6
+      },
+      {
+        "index": 36,
+        "name": "Text 36",
+        "text": "Evidence and citation checks",
+        "left": 4.07,
+        "top": 4.48,
+        "w": 1.66,
+        "h": 0.6
+      },
+      {
+        "index": 38,
+        "name": "Text 38",
+        "text": "Structured findings for decisions",
+        "left": 5.92,
+        "top": 4.48,
+        "w": 1.66,
+        "h": 0.6
+      },
+      {
+        "index": 40,
+        "name": "Text 40",
+        "text": "Final decision stays with humans",
+        "left": 7.77,
+        "top": 4.48,
+        "w": 1.66,
+        "h": 0.6
+      }
+    ]
+  },
+  {
+    "slide_num": 3,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "Our Idea: A Multi-Agent Due Diligence System",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "3",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 2,
+        "name": "Text 2",
+        "text": "9 domain-specific AI agents",
+        "left": 0.5,
+        "top": 1.05,
+        "w": 5.5,
+        "h": 0.3
+      },
+      {
+        "index": 7,
+        "name": "Text 6",
+        "text": "Legal",
+        "left": 1.08,
+        "top": 1.52,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 8,
+        "name": "Text 7",
+        "text": "Contracts & legal terms",
+        "left": 0.6,
+        "top": 1.99,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 13,
+        "name": "Text 11",
+        "text": "Finance",
+        "left": 2.95,
+        "top": 1.52,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 14,
+        "name": "Text 12",
+        "text": "Debt, revenue, liabilities",
+        "left": 2.47,
+        "top": 1.99,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 19,
+        "name": "Text 16",
+        "text": "Commercial",
+        "left": 4.82,
+        "top": 1.52,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 20,
+        "name": "Text 17",
+        "text": "Customers & market",
+        "left": 4.34,
+        "top": 1.99,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 25,
+        "name": "Text 21",
+        "text": "Technology",
+        "left": 1.08,
+        "top": 2.57,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 26,
+        "name": "Text 22",
+        "text": "Systems & tech risks",
+        "left": 0.6,
+        "top": 3.04,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 31,
+        "name": "Text 26",
+        "text": "Cybersecurity",
+        "left": 2.95,
+        "top": 2.57,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 32,
+        "name": "Text 27",
+        "text": "Security gaps",
+        "left": 2.47,
+        "top": 3.04,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 37,
+        "name": "Text 31",
+        "text": "HR",
+        "left": 4.82,
+        "top": 2.57,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 38,
+        "name": "Text 32",
+        "text": "Workforce risks",
+        "left": 4.34,
+        "top": 3.04,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 43,
+        "name": "Text 36",
+        "text": "Tax",
+        "left": 1.08,
+        "top": 3.62,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 44,
+        "name": "Text 37",
+        "text": "Tax exposure",
+        "left": 0.6,
+        "top": 4.09,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 49,
+        "name": "Text 41",
+        "text": "Regulatory",
+        "left": 2.95,
+        "top": 3.62,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 50,
+        "name": "Text 42",
+        "text": "Legal compliance",
+        "left": 2.47,
+        "top": 4.09,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 55,
+        "name": "Text 46",
+        "text": "ESG",
+        "left": 4.82,
+        "top": 3.62,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 56,
+        "name": "Text 47",
+        "text": "Environmental & social",
+        "left": 4.34,
+        "top": 4.09,
+        "w": 1.6,
+        "h": 0.32
+      },
+      {
+        "index": 57,
+        "name": "Text 48",
+        "text": "Instead of one general AI system, each specialist agent focuses on risks relevant to its own domain.",
+        "left": 0.5,
+        "top": 4.65,
+        "w": 5.5,
+        "h": 0.5
+      },
+      {
+        "index": 58,
+        "name": "Text 49",
+        "text": "How an agent works",
+        "left": 6.3,
+        "top": 1.05,
+        "w": 3.2,
+        "h": 0.3
+      },
+      {
+        "index": 60,
+        "name": "Text 51",
+        "text": "Document Context\n+ Domain Instructions\n+ GPT-4o / GPT-4o-mini",
+        "left": 6.37,
+        "top": 1.42,
+        "w": 3.06,
+        "h": 0.9
+      },
+      {
+        "index": 63,
+        "name": "Text 54",
+        "text": "Specialized Agent (e.g. Finance)",
+        "left": 6.37,
+        "top": 2.52,
+        "w": 3.06,
+        "h": 0.42
+      },
+      {
+        "index": 66,
+        "name": "Text 57",
+        "text": "Structured Finding:\nRisk + Severity + Evidence + Citation",
+        "left": 6.37,
+        "top": 3.14,
+        "w": 3.06,
+        "h": 0.65
+      },
+      {
+        "index": 67,
+        "name": "Text 58",
+        "text": "LLM = underlying language intelligence.\nAgent = role + instructions + context + LLM + structured output.",
+        "left": 6.3,
+        "top": 3.95,
+        "w": 3.2,
+        "h": 0.9
+      }
+    ]
+  },
+  {
+    "slide_num": 4,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "How DealGuard AI Works – End-to-End",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "4",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 3,
+        "name": "Text 3",
+        "text": "User Uploads Documents",
+        "left": 0.57,
+        "top": 1.15,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 6,
+        "name": "Text 6",
+        "text": "Node.js Gateway",
+        "left": 2.11,
+        "top": 1.15,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 9,
+        "name": "Text 9",
+        "text": "Document Processing",
+        "left": 3.65,
+        "top": 1.15,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 12,
+        "name": "Text 12",
+        "text": "Text Extraction & Chunking",
+        "left": 5.19,
+        "top": 1.15,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 15,
+        "name": "Text 15",
+        "text": "Orchestrator",
+        "left": 6.73,
+        "top": 1.15,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 18,
+        "name": "Text 18",
+        "text": "9 Specialist AI Agents",
+        "left": 8.27,
+        "top": 1.15,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 21,
+        "name": "Text 21",
+        "text": "Synthesis Agent",
+        "left": 8.27,
+        "top": 2.6,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 24,
+        "name": "Text 24",
+        "text": "Quality Gate",
+        "left": 6.73,
+        "top": 2.6,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 27,
+        "name": "Text 27",
+        "text": "Risk Classification",
+        "left": 5.19,
+        "top": 2.6,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 30,
+        "name": "Text 30",
+        "text": "Report Agent",
+        "left": 3.65,
+        "top": 2.6,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 33,
+        "name": "Text 33",
+        "text": "React Dashboard",
+        "left": 2.11,
+        "top": 2.6,
+        "w": 1.16,
+        "h": 0.85
+      },
+      {
+        "index": 36,
+        "name": "Text 36",
+        "text": "Ingestion & chunking",
+        "left": 0.65,
+        "top": 3.78,
+        "w": 2.6,
+        "h": 0.35
+      },
+      {
+        "index": 37,
+        "name": "Text 37",
+        "text": "Supported: PDF, DOCX, XLSX, PPTX, TXT, CSV, MD. Large documents are split into smaller manageable text units before AI analysis.",
+        "left": 0.65,
+        "top": 4.12,
+        "w": 2.6,
+        "h": 0.95
+      },
+      {
+        "index": 40,
+        "name": "Text 40",
+        "text": "Orchestrator",
+        "left": 3.7,
+        "top": 3.78,
+        "w": 2.6,
+        "h": 0.35
+      },
+      {
+        "index": 41,
+        "name": "Text 41",
+        "text": "Acts as a manager that starts and coordinates the agents. Python asyncio runs them concurrently, helping reduce waiting time versus strictly sequential processing.",
+        "left": 3.7,
+        "top": 4.12,
+        "w": 2.6,
+        "h": 0.95
+      },
+      {
+        "index": 44,
+        "name": "Text 44",
+        "text": "Real-time updates",
+        "left": 6.75,
+        "top": 3.78,
+        "w": 2.6,
+        "h": 0.35
+      },
+      {
+        "index": 45,
+        "name": "Text 45",
+        "text": "Python engine → Redis Pub/Sub → Node.js → Socket.IO → React. Example event: “Finance Agent completed”.",
+        "left": 6.75,
+        "top": 4.12,
+        "w": 2.6,
+        "h": 0.95
+      }
+    ]
+  },
+  {
+    "slide_num": 5,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "From Findings to Decisions",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "5",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 2,
+        "name": "Text 2",
+        "text": "1  Cross-domain synthesis",
+        "left": 0.5,
+        "top": 1.08,
+        "w": 2.9,
+        "h": 0.3
+      },
+      {
+        "index": 3,
+        "name": "Text 3",
+        "text": "2  Quality Gate",
+        "left": 3.55,
+        "top": 1.08,
+        "w": 2.9,
+        "h": 0.3
+      },
+      {
+        "index": 4,
+        "name": "Text 4",
+        "text": "3  Risk classification",
+        "left": 6.6,
+        "top": 1.08,
+        "w": 2.9,
+        "h": 0.3
+      },
+      {
+        "index": 6,
+        "name": "Text 6",
+        "text": "Finance Agent\n→ High Debt",
+        "left": 0.57,
+        "top": 1.5,
+        "w": 1.26,
+        "h": 0.65
+      },
+      {
+        "index": 8,
+        "name": "Text 8",
+        "text": "Legal Agent\n→ Restrictive Covenant",
+        "left": 2.07,
+        "top": 1.5,
+        "w": 1.26,
+        "h": 0.65
+      },
+      {
+        "index": 12,
+        "name": "Text 12",
+        "text": "Synthesis Agent",
+        "left": 0.67,
+        "top": 2.62,
+        "w": 2.56,
+        "h": 0.4
+      },
+      {
+        "index": 15,
+        "name": "Text 15",
+        "text": "Cross-Domain Risk: high debt + restrictive covenant",
+        "left": 0.57,
+        "top": 3.32,
+        "w": 2.76,
+        "h": 0.7
+      },
+      {
+        "index": 16,
+        "name": "Text 16",
+        "text": "Some risks appear only when domains are connected.",
+        "left": 0.5,
+        "top": 4.08,
+        "w": 2.9,
+        "h": 0.35
+      },
+      {
+        "index": 21,
+        "name": "Text 20",
+        "text": "Citation present?",
+        "left": 4.02,
+        "top": 1.5,
+        "w": 2.4,
+        "h": 0.42
+      },
+      {
+        "index": 26,
+        "name": "Text 24",
+        "text": "Quote verifiable?",
+        "left": 4.02,
+        "top": 2.0,
+        "w": 2.4,
+        "h": 0.42
+      },
+      {
+        "index": 31,
+        "name": "Text 28",
+        "text": "Evidence supports severity?",
+        "left": 4.02,
+        "top": 2.5,
+        "w": 2.4,
+        "h": 0.42
+      },
+      {
+        "index": 36,
+        "name": "Text 32",
+        "text": "All domains completed?",
+        "left": 4.02,
+        "top": 3.0,
+        "w": 2.4,
+        "h": 0.42
+      },
+      {
+        "index": 41,
+        "name": "Text 36",
+        "text": "Duplicate / contradictory?",
+        "left": 4.02,
+        "top": 3.5,
+        "w": 2.4,
+        "h": 0.42
+      },
+      {
+        "index": 42,
+        "name": "Text 37",
+        "text": "Findings → Gate → Validated Findings → Report",
+        "left": 3.55,
+        "top": 4.08,
+        "w": 2.9,
+        "h": 0.35
+      },
+      {
+        "index": 44,
+        "name": "Text 39",
+        "text": "P0",
+        "left": 6.67,
+        "top": 1.5,
+        "w": 0.46,
+        "h": 0.36
+      },
+      {
+        "index": 46,
+        "name": "Text 41",
+        "text": "Most Serious",
+        "left": 7.35,
+        "top": 1.5,
+        "w": 2.08,
+        "h": 0.36
+      },
+      {
+        "index": 48,
+        "name": "Text 43",
+        "text": "P1",
+        "left": 6.67,
+        "top": 1.92,
+        "w": 0.46,
+        "h": 0.36
+      },
+      {
+        "index": 50,
+        "name": "Text 45",
+        "text": "High",
+        "left": 7.35,
+        "top": 1.92,
+        "w": 2.08,
+        "h": 0.36
+      },
+      {
+        "index": 52,
+        "name": "Text 47",
+        "text": "P2",
+        "left": 6.67,
+        "top": 2.34,
+        "w": 0.46,
+        "h": 0.36
+      },
+      {
+        "index": 54,
+        "name": "Text 49",
+        "text": "Medium",
+        "left": 7.35,
+        "top": 2.34,
+        "w": 2.08,
+        "h": 0.36
+      },
+      {
+        "index": 56,
+        "name": "Text 51",
+        "text": "P3",
+        "left": 6.67,
+        "top": 2.76,
+        "w": 0.46,
+        "h": 0.36
+      },
+      {
+        "index": 58,
+        "name": "Text 53",
+        "text": "Lower",
+        "left": 7.35,
+        "top": 2.76,
+        "w": 2.08,
+        "h": 0.36
+      },
+      {
+        "index": 60,
+        "name": "Text 55",
+        "text": "Go / Caution / No-Go",
+        "left": 6.67,
+        "top": 3.35,
+        "w": 2.76,
+        "h": 0.32
+      },
+      {
+        "index": 63,
+        "name": "Text 58",
+        "text": "Human Decision Maker",
+        "left": 6.67,
+        "top": 3.87,
+        "w": 2.76,
+        "h": 0.32
+      },
+      {
+        "index": 65,
+        "name": "Text 60",
+        "text": "Quality Gate is designed to improve the reliability and evidence quality of findings.",
+        "left": 0.57,
+        "top": 4.55,
+        "w": 4.26,
+        "h": 0.6
+      },
+      {
+        "index": 67,
+        "name": "Text 62",
+        "text": "DealGuard AI provides decision support; the final business decision remains with the human.",
+        "left": 5.17,
+        "top": 4.55,
+        "w": 4.26,
+        "h": 0.6
+      }
+    ]
+  },
+  {
+    "slide_num": 6,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "System Architecture & Technology Stack",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "6",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 3,
+        "name": "Text 3",
+        "text": "React Frontend",
+        "left": 0.57,
+        "top": 1.1,
+        "w": 1.56,
+        "h": 0.55
+      },
+      {
+        "index": 6,
+        "name": "Text 6",
+        "text": "Node.js / Express Gateway",
+        "left": 0.57,
+        "top": 1.97,
+        "w": 1.56,
+        "h": 0.7
+      },
+      {
+        "index": 9,
+        "name": "Text 9",
+        "text": "MongoDB",
+        "left": 0.57,
+        "top": 2.99,
+        "w": 1.56,
+        "h": 0.55
+      },
+      {
+        "index": 12,
+        "name": "Text 12",
+        "text": "Redis Pub/Sub",
+        "left": 2.57,
+        "top": 1.97,
+        "w": 0.86,
+        "h": 0.7
+      },
+      {
+        "index": 16,
+        "name": "Text 16",
+        "text": "FastAPI AI Engine",
+        "left": 3.92,
+        "top": 1.1,
+        "w": 1.71,
+        "h": 0.4
+      },
+      {
+        "index": 19,
+        "name": "Text 19",
+        "text": "Document Ingestion",
+        "left": 3.92,
+        "top": 1.6,
+        "w": 1.71,
+        "h": 0.4
+      },
+      {
+        "index": 22,
+        "name": "Text 22",
+        "text": "Orchestrator",
+        "left": 3.92,
+        "top": 2.1,
+        "w": 1.71,
+        "h": 0.4
+      },
+      {
+        "index": 25,
+        "name": "Text 25",
+        "text": "9 Specialist Agents",
+        "left": 3.92,
+        "top": 2.6,
+        "w": 1.71,
+        "h": 0.4
+      },
+      {
+        "index": 28,
+        "name": "Text 28",
+        "text": "Synthesis + Quality Gate",
+        "left": 3.92,
+        "top": 3.1,
+        "w": 1.71,
+        "h": 0.4
+      },
+      {
+        "index": 31,
+        "name": "Text 31",
+        "text": "Final Findings",
+        "left": 3.92,
+        "top": 3.6,
+        "w": 1.71,
+        "h": 0.4
+      },
+      {
+        "index": 36,
+        "name": "Text 36",
+        "text": "Frontend",
+        "left": 6.53,
+        "top": 1.2,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 37,
+        "name": "Text 37",
+        "text": "React\nVite\nAxios\nSocket.IO Client\nD3.js",
+        "left": 6.05,
+        "top": 1.72,
+        "w": 1.58,
+        "h": 1.28
+      },
+      {
+        "index": 42,
+        "name": "Text 41",
+        "text": "Backend",
+        "left": 8.38,
+        "top": 1.2,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 43,
+        "name": "Text 42",
+        "text": "Node.js\nExpress\nMongoDB / Mongoose\nRedis\nSocket.IO",
+        "left": 7.9,
+        "top": 1.72,
+        "w": 1.58,
+        "h": 1.28
+      },
+      {
+        "index": 48,
+        "name": "Text 46",
+        "text": "AI Engine",
+        "left": 6.53,
+        "top": 3.25,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 49,
+        "name": "Text 47",
+        "text": "Python\nFastAPI\nOpenAI GPT-4o / GPT-4o-mini\nasyncio",
+        "left": 6.05,
+        "top": 3.77,
+        "w": 1.58,
+        "h": 1.28
+      },
+      {
+        "index": 54,
+        "name": "Text 51",
+        "text": "Infrastructure",
+        "left": 8.38,
+        "top": 3.25,
+        "w": 1.15,
+        "h": 0.4
+      },
+      {
+        "index": 55,
+        "name": "Text 52",
+        "text": "Docker / Docker Compose\nPrometheus\nGrafana",
+        "left": 7.9,
+        "top": 3.77,
+        "w": 1.58,
+        "h": 1.28
+      }
+    ]
+  },
+  {
+    "slide_num": 7,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "What the User Sees:",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "7",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 5,
+        "name": "Text 5",
+        "text": "Deal / Report information",
+        "left": 0.65,
+        "top": 1.16,
+        "w": 4.4,
+        "h": 0.3
+      },
+      {
+        "index": 8,
+        "name": "Text 8",
+        "text": "AgentGrid",
+        "left": 0.64,
+        "top": 1.54,
+        "w": 1.25,
+        "h": 0.2
+      },
+      {
+        "index": 20,
+        "name": "Text 20",
+        "text": "Risk Heatmap",
+        "left": 2.06,
+        "top": 1.54,
+        "w": 1.45,
+        "h": 0.2
+      },
+      {
+        "index": 39,
+        "name": "Text 39",
+        "text": "Go / No-Go",
+        "left": 3.68,
+        "top": 1.54,
+        "w": 1.4,
+        "h": 0.2
+      },
+      {
+        "index": 41,
+        "name": "Text 41",
+        "text": "CAUTION",
+        "left": 3.82,
+        "top": 2.0,
+        "w": 1.11,
+        "h": 0.5
+      },
+      {
+        "index": 44,
+        "name": "Text 44",
+        "text": "Findings Table",
+        "left": 0.64,
+        "top": 2.82,
+        "w": 2.5,
+        "h": 0.2
+      },
+      {
+        "index": 50,
+        "name": "Text 50",
+        "text": "Cross-Reference Graph",
+        "left": 3.31,
+        "top": 2.82,
+        "w": 1.77,
+        "h": 0.2
+      },
+      {
+        "index": 58,
+        "name": "Text 58",
+        "text": "Expected impact (project goals)",
+        "left": 5.6,
+        "top": 1.08,
+        "w": 3.9,
+        "h": 0.3
+      },
+      {
+        "index": 61,
+        "name": "Text 60",
+        "text": "Faster first-pass analysis",
+        "left": 6.02,
+        "top": 1.45,
+        "w": 3.5,
+        "h": 0.36
+      },
+      {
+        "index": 64,
+        "name": "Text 62",
+        "text": "Structured multi-domain risk identification",
+        "left": 6.02,
+        "top": 1.87,
+        "w": 3.5,
+        "h": 0.36
+      },
+      {
+        "index": 67,
+        "name": "Text 64",
+        "text": "Evidence-backed findings",
+        "left": 6.02,
+        "top": 2.29,
+        "w": 3.5,
+        "h": 0.36
+      },
+      {
+        "index": 70,
+        "name": "Text 66",
+        "text": "Better visibility of cross-domain risks",
+        "left": 6.02,
+        "top": 2.71,
+        "w": 3.5,
+        "h": 0.36
+      },
+      {
+        "index": 73,
+        "name": "Text 68",
+        "text": "Real-time analysis progress",
+        "left": 6.02,
+        "top": 3.13,
+        "w": 3.5,
+        "h": 0.36
+      },
+      {
+        "index": 76,
+        "name": "Text 70",
+        "text": "Centralized decision-support dashboard",
+        "left": 6.02,
+        "top": 3.55,
+        "w": 3.5,
+        "h": 0.36
+      },
+      {
+        "index": 79,
+        "name": "Text 72",
+        "text": "Human stays in control of the final decision",
+        "left": 6.02,
+        "top": 3.97,
+        "w": 3.5,
+        "h": 0.36
+      }
+    ]
+  },
+  {
+    "slide_num": 8,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "Where AI Reduces Effort and Improves Due Diligence",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "8",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 3,
+        "name": "Text 3",
+        "text": "Traditional manual workflow",
+        "left": 0.57,
+        "top": 1.05,
+        "w": 3.76,
+        "h": 0.38
+      },
+      {
+        "index": 5,
+        "name": "Text 5",
+        "text": "DealGuard AI-assisted workflow",
+        "left": 5.67,
+        "top": 1.05,
+        "w": 3.76,
+        "h": 0.38
+      },
+      {
+        "index": 7,
+        "name": "Text 7",
+        "text": "Manual document review",
+        "left": 0.57,
+        "top": 1.5,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 10,
+        "name": "Text 10",
+        "text": "Structured document processing",
+        "left": 5.67,
+        "top": 1.5,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 12,
+        "name": "Text 12",
+        "text": "Separate domain reviews",
+        "left": 0.57,
+        "top": 2.0,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 15,
+        "name": "Text 15",
+        "text": "Parallel specialist-agent analysis",
+        "left": 5.67,
+        "top": 2.0,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 17,
+        "name": "Text 17",
+        "text": "Manual cross-domain consolidation",
+        "left": 0.57,
+        "top": 2.5,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 20,
+        "name": "Text 20",
+        "text": "AI-assisted risk synthesis",
+        "left": 5.67,
+        "top": 2.5,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 22,
+        "name": "Text 22",
+        "text": "Repeated evidence checking",
+        "left": 0.57,
+        "top": 3.0,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 25,
+        "name": "Text 25",
+        "text": "Quality Gate validation",
+        "left": 5.67,
+        "top": 3.0,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 27,
+        "name": "Text 27",
+        "text": "Manual report preparation",
+        "left": 0.57,
+        "top": 3.5,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 30,
+        "name": "Text 30",
+        "text": "Structured report generation",
+        "left": 5.67,
+        "top": 3.5,
+        "w": 3.76,
+        "h": 0.42
+      },
+      {
+        "index": 32,
+        "name": "Text 32",
+        "text": "Manual, document-heavy, coordination-intensive.",
+        "left": 0.57,
+        "top": 4.02,
+        "w": 3.76,
+        "h": 0.62
+      },
+      {
+        "index": 34,
+        "name": "Text 34",
+        "text": "Automated document preparation, concurrent AI analysis, centralized synthesis, structured validation, report generation.",
+        "left": 5.67,
+        "top": 4.02,
+        "w": 3.76,
+        "h": 0.62
+      }
+    ]
+  },
+  {
+    "slide_num": 9,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "What Improves with DealGuard AI?",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "9",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 6,
+        "name": "Text 5",
+        "text": "Speed",
+        "left": 0.62,
+        "top": 1.78,
+        "w": 1.5,
+        "h": 0.5
+      },
+      {
+        "index": 7,
+        "name": "Text 6",
+        "text": "Concurrent analysis can reduce waiting vs strictly sequential agent execution.",
+        "left": 0.62,
+        "top": 2.32,
+        "w": 1.5,
+        "h": 1.4
+      },
+      {
+        "index": 12,
+        "name": "Text 12",
+        "text": "Coverage",
+        "left": 2.44,
+        "top": 1.78,
+        "w": 1.5,
+        "h": 0.5
+      },
+      {
+        "index": 13,
+        "name": "Text 13",
+        "text": "Nine specialist agents examine documents from different business domains.",
+        "left": 2.44,
+        "top": 2.32,
+        "w": 1.5,
+        "h": 1.4
+      },
+      {
+        "index": 18,
+        "name": "Text 19",
+        "text": "Cross-domain insight",
+        "left": 4.26,
+        "top": 1.78,
+        "w": 1.5,
+        "h": 0.5
+      },
+      {
+        "index": 19,
+        "name": "Text 20",
+        "text": "Synthesis Agent connects related findings that isolated reviews may miss.",
+        "left": 4.26,
+        "top": 2.32,
+        "w": 1.5,
+        "h": 1.4
+      },
+      {
+        "index": 24,
+        "name": "Text 26",
+        "text": "Evidence traceability",
+        "left": 6.08,
+        "top": 1.78,
+        "w": 1.5,
+        "h": 0.5
+      },
+      {
+        "index": 25,
+        "name": "Text 27",
+        "text": "Citations and supporting quotes help trace findings to source documents.",
+        "left": 6.08,
+        "top": 2.32,
+        "w": 1.5,
+        "h": 1.4
+      },
+      {
+        "index": 30,
+        "name": "Text 33",
+        "text": "Structured decision support",
+        "left": 7.9,
+        "top": 1.78,
+        "w": 1.5,
+        "h": 0.5
+      },
+      {
+        "index": 31,
+        "name": "Text 34",
+        "text": "Risk classes and a central dashboard make findings easier to review.",
+        "left": 7.9,
+        "top": 2.32,
+        "w": 1.5,
+        "h": 1.4
+      }
+    ]
+  },
+  {
+    "slide_num": 10,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "DevOps & Deployment: From Development to Monitoring",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "10",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 3,
+        "name": "Text 3",
+        "text": "Development / Code",
+        "left": 0.57,
+        "top": 1.05,
+        "w": 0.96,
+        "h": 0.85
+      },
+      {
+        "index": 6,
+        "name": "Text 6",
+        "text": "Containerization (Docker)",
+        "left": 1.87,
+        "top": 1.05,
+        "w": 0.96,
+        "h": 0.85
+      },
+      {
+        "index": 9,
+        "name": "Text 9",
+        "text": "Service Config (Docker Compose)",
+        "left": 3.17,
+        "top": 1.05,
+        "w": 0.96,
+        "h": 0.85
+      },
+      {
+        "index": 12,
+        "name": "Text 12",
+        "text": "Application Deployment",
+        "left": 4.47,
+        "top": 1.05,
+        "w": 0.96,
+        "h": 0.85
+      },
+      {
+        "index": 15,
+        "name": "Text 15",
+        "text": "Guardrails-ChatBot Safety Layer",
+        "left": 5.77,
+        "top": 1.05,
+        "w": 0.96,
+        "h": 0.85
+      },
+      {
+        "index": 18,
+        "name": "Text 18",
+        "text": "Prometheus/\nGrafana Dashboards",
+        "left": 7.07,
+        "top": 1.05,
+        "w": 0.96,
+        "h": 0.85
+      },
+      {
+        "index": 21,
+        "name": "Text 21",
+        "text": "Troubleshooting & Improvement",
+        "left": 8.37,
+        "top": 1.05,
+        "w": 0.96,
+        "h": 0.85
+      },
+      {
+        "index": 22,
+        "name": "Text 22",
+        "text": "Supports the current architecture:",
+        "left": 0.5,
+        "top": 2.05,
+        "w": 9.0,
+        "h": 0.28
+      },
+      {
+        "index": 24,
+        "name": "Text 24",
+        "text": "React Frontend",
+        "left": 0.57,
+        "top": 2.38,
+        "w": 1.56,
+        "h": 0.5
+      },
+      {
+        "index": 26,
+        "name": "Text 26",
+        "text": "Node.js / Express Gateway",
+        "left": 2.4,
+        "top": 2.38,
+        "w": 1.56,
+        "h": 0.5
+      },
+      {
+        "index": 28,
+        "name": "Text 28",
+        "text": "Python FastAPI AI Engine",
+        "left": 4.22,
+        "top": 2.38,
+        "w": 1.56,
+        "h": 0.5
+      },
+      {
+        "index": 30,
+        "name": "Text 30",
+        "text": "MongoDB",
+        "left": 6.04,
+        "top": 2.38,
+        "w": 1.56,
+        "h": 0.5
+      },
+      {
+        "index": 32,
+        "name": "Text 32",
+        "text": "Redis",
+        "left": 7.87,
+        "top": 2.38,
+        "w": 1.56,
+        "h": 0.5
+      },
+      {
+        "index": 35,
+        "name": "Text 35",
+        "text": "Docker & Compose",
+        "left": 0.65,
+        "top": 3.13,
+        "w": 2.6,
+        "h": 0.35
+      },
+      {
+        "index": 36,
+        "name": "Text 36",
+        "text": "Docker packages services with their dependencies for consistent environments; Compose configures and runs multiple services together per the project configuration.",
+        "left": 0.65,
+        "top": 3.47,
+        "w": 2.6,
+        "h": 1.0
+      },
+      {
+        "index": 39,
+        "name": "Text 39",
+        "text": "Prometheus & Grafana",
+        "left": 3.7,
+        "top": 3.13,
+        "w": 2.6,
+        "h": 0.35
+      },
+      {
+        "index": 40,
+        "name": "Text 40",
+        "text": "Monitoring tools only: Prometheus collects metrics (when instrumentation and scraping are configured); Grafana visualizes them. They do not perform AI due diligence.",
+        "left": 3.7,
+        "top": 3.47,
+        "w": 2.6,
+        "h": 1.0
+      },
+      {
+        "index": 43,
+        "name": "Text 43",
+        "text": "Operational monitoring",
+        "left": 6.75,
+        "top": 3.13,
+        "w": 2.6,
+        "h": 0.35
+      },
+      {
+        "index": 44,
+        "name": "Text 44",
+        "text": "Helps developers identify service failures, resource issues and performance bottlenecks, supporting troubleshooting and improvement.",
+        "left": 6.75,
+        "top": 3.47,
+        "w": 2.6,
+        "h": 1.0
+      }
+    ]
+  },
+  {
+    "slide_num": 11,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "Future Scope",
+        "left": 0.5,
+        "top": 0.28,
+        "w": 9.0,
+        "h": 0.7
+      },
+      {
+        "index": 1,
+        "name": "Text 1",
+        "text": "11",
+        "left": 9.0,
+        "top": 5.25,
+        "w": 0.5,
+        "h": 0.25
+      },
+      {
+        "index": 6,
+        "name": "Text 7",
+        "text": "More formats & languages",
+        "left": 1.08,
+        "top": 1.53,
+        "w": 1.5,
+        "h": 0.45
+      },
+      {
+        "index": 7,
+        "name": "Text 8",
+        "text": "Expand document ingestion capabilities.",
+        "left": 0.62,
+        "top": 2.07,
+        "w": 1.93,
+        "h": 0.85
+      },
+      {
+        "index": 12,
+        "name": "Text 12",
+        "text": "Improved AI reliability",
+        "left": 3.36,
+        "top": 1.53,
+        "w": 1.5,
+        "h": 0.45
+      },
+      {
+        "index": 13,
+        "name": "Text 13",
+        "text": "Stronger evidence verification, citation validation and evaluation of findings.",
+        "left": 2.9,
+        "top": 2.07,
+        "w": 1.93,
+        "h": 0.85
+      },
+      {
+        "index": 18,
+        "name": "Text 17",
+        "text": "Human-in-the-loop review",
+        "left": 5.64,
+        "top": 1.53,
+        "w": 1.5,
+        "h": 0.45
+      },
+      {
+        "index": 19,
+        "name": "Text 18",
+        "text": "Domain experts review, correct and approve AI findings.",
+        "left": 5.18,
+        "top": 2.07,
+        "w": 1.93,
+        "h": 0.85
+      },
+      {
+        "index": 24,
+        "name": "Text 22",
+        "text": "Advanced risk analytics",
+        "left": 7.92,
+        "top": 1.53,
+        "w": 1.5,
+        "h": 0.45
+      },
+      {
+        "index": 25,
+        "name": "Text 23",
+        "text": "Trend analysis, cross-deal comparison, customizable risk scoring.",
+        "left": 7.46,
+        "top": 2.07,
+        "w": 1.93,
+        "h": 0.85
+      },
+      {
+        "index": 30,
+        "name": "Text 27",
+        "text": "Scalability",
+        "left": 1.08,
+        "top": 3.18,
+        "w": 1.5,
+        "h": 0.45
+      },
+      {
+        "index": 31,
+        "name": "Text 28",
+        "text": "Larger document collections and more simultaneous projects.",
+        "left": 0.62,
+        "top": 3.72,
+        "w": 1.93,
+        "h": 0.85
+      },
+      {
+        "index": 36,
+        "name": "Text 32",
+        "text": "Security & governance",
+        "left": 3.36,
+        "top": 3.18,
+        "w": 1.5,
+        "h": 0.45
+      },
+      {
+        "index": 37,
+        "name": "Text 33",
+        "text": "Stronger access controls, audit trails, protection of confidential documents.",
+        "left": 2.9,
+        "top": 3.72,
+        "w": 1.93,
+        "h": 0.85
+      },
+      {
+        "index": 42,
+        "name": "Text 37",
+        "text": "Integration",
+        "left": 5.64,
+        "top": 3.18,
+        "w": 1.5,
+        "h": 0.45
+      },
+      {
+        "index": 43,
+        "name": "Text 38",
+        "text": "Enterprise document management, financial and compliance platforms.",
+        "left": 5.18,
+        "top": 3.72,
+        "w": 1.93,
+        "h": 0.85
+      },
+      {
+        "index": 45,
+        "name": "Text 40",
+        "text": "Goal: make DealGuard AI more reliable, scalable, secure and useful for real-world M&A teams.",
+        "left": 7.41,
+        "top": 3.1,
+        "w": 2.01,
+        "h": 1.5
+      }
+    ]
+  },
+  {
+    "slide_num": 12,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Text 0",
+        "text": "Thank You",
+        "left": 0.7,
+        "top": 1.0,
+        "w": 8.6,
+        "h": 1.0
+      },
+      {
+        "index": 2,
+        "name": "Text 2",
+        "text": "DealGuard AI – AI Powered M&A Due Diligence Platform",
+        "left": 0.7,
+        "top": 3.0,
+        "w": 8.6,
+        "h": 0.4
+      }
+    ]
+  }
+]

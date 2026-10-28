@@ -1,0 +1,39 @@
+# Environment variables & secrets
+.env
+.env*.local
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+venv/
+.venv/
+
+# Caching & indices
+data/faiss_index/
+data/rag_v2/
+.devassist_cache/
+.devassist_index/
+.pytest_cache/
+.benchmarks/
+
+# Logs & temp
+*.log
+.pids/
+.pids
+.ngrok_url
+*.done
+.DS_Store
+
+# Frontend
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.agents/

@@ -1,0 +1,671 @@
+==============================
+SLIDE 1
+==============================
+Shape 0 (Text 1) [x=0.7, y=1.1, w=8.6, h=1.4]:
+DealGuard AI – AI-Powered M&A Due Diligence Platform
+
+Shape 2 (Text 4) [x=0.77, y=3.85, w=4.01, h=0.48]:
+Team Members: Samradh ,Prashant ,Chirag
+
+Shape 4 (Text 6) [x=5.12, y=3.85, w=4.01, h=0.48]:
+University: BML Munjal University
+
+Shape 6 (Text 8) [x=0.77, y=4.45, w=4.01, h=0.48]:
+Course / Subject: AI DevOps
+
+Shape 8 (Text 10) [x=5.12, y=4.45, w=4.01, h=0.48]:
+Mentor: Naveen Singh
+
+==============================
+SLIDE 2
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+Problem → Aim: Why DealGuard AI?
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+2
+
+Shape 2 (Text 2) [x=0.5, y=1.05, w=3.0, h=0.3]:
+The problem
+
+Shape 4 (Text 4) [x=0.57, y=1.42, w=2.86, h=0.48]:
+Hundreds of Documents
+
+Shape 7 (Text 7) [x=0.57, y=2.03, w=2.86, h=0.48]:
+Manual Review
+
+Shape 10 (Text 10) [x=0.57, y=2.64, w=2.86, h=0.48]:
+Multiple Domains
+
+Shape 13 (Text 13) [x=0.57, y=3.25, w=2.86, h=0.48]:
+Hidden / Connected Risks
+
+Shape 16 (Text 16) [x=0.57, y=3.86, w=2.86, h=0.48]:
+Long Analysis Time
+
+Shape 17 (Text 17) [x=0.5, y=4.4, w=3.0, h=0.75]:
+Contracts, financial, HR, technology, cybersecurity, tax, regulatory and ESG documents – reviewed manually, across domains.
+
+Shape 18 (Text 18) [x=4.0, y=1.05, w=5.5, h=0.3]:
+The aim
+
+Shape 20 (Text 20) [x=4.07, y=1.42, w=5.36, h=1.7]:
+DealGuard AI aims to accelerate and structure M&A due diligence by using multiple specialized AI agents to analyze company documents across business domains, identify evidence-backed risks, connect cross-domain risks, validate findings, and present results in a decision-support dashboard.
+
+Shape 22 (Text 22) [x=4.07, y=3.25, w=1.16, h=0.4]:
+FAST
+
+Shape 24 (Text 24) [x=5.47, y=3.25, w=1.16, h=0.4]:
+MULTI-DOMAIN
+
+Shape 26 (Text 26) [x=6.84, y=3.26, w=1.16, h=0.4]:
+EVIDENCE-BACKED
+
+Shape 28 (Text 28) [x=8.27, y=3.25, w=1.16, h=0.4]:
+HUMAN-IN-THE-LOOP
+
+Shape 30 (Text 30) [x=4.07, y=3.8, w=1.66, h=0.6]:
+Faster first-pass analysis
+
+Shape 32 (Text 32) [x=5.92, y=3.8, w=1.66, h=0.6]:
+Domain-specific risk identification
+
+Shape 34 (Text 34) [x=7.77, y=3.8, w=1.66, h=0.6]:
+Cross-domain risk identification
+
+Shape 36 (Text 36) [x=4.07, y=4.48, w=1.66, h=0.6]:
+Evidence and citation checks
+
+Shape 38 (Text 38) [x=5.92, y=4.48, w=1.66, h=0.6]:
+Structured findings for decisions
+
+Shape 40 (Text 40) [x=7.77, y=4.48, w=1.66, h=0.6]:
+Final decision stays with humans
+
+==============================
+SLIDE 3
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+Our Idea: A Multi-Agent Due Diligence System
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+3
+
+Shape 2 (Text 2) [x=0.5, y=1.05, w=5.5, h=0.3]:
+9 domain-specific AI agents
+
+Shape 7 (Text 6) [x=1.08, y=1.52, w=1.15, h=0.4]:
+Legal
+
+Shape 8 (Text 7) [x=0.6, y=1.99, w=1.6, h=0.32]:
+Contracts & legal terms
+
+Shape 13 (Text 11) [x=2.95, y=1.52, w=1.15, h=0.4]:
+Finance
+
+Shape 14 (Text 12) [x=2.47, y=1.99, w=1.6, h=0.32]:
+Debt, revenue, liabilities
+
+Shape 19 (Text 16) [x=4.82, y=1.52, w=1.15, h=0.4]:
+Commercial
+
+Shape 20 (Text 17) [x=4.34, y=1.99, w=1.6, h=0.32]:
+Customers & market
+
+Shape 25 (Text 21) [x=1.08, y=2.57, w=1.15, h=0.4]:
+Technology
+
+Shape 26 (Text 22) [x=0.6, y=3.04, w=1.6, h=0.32]:
+Systems & tech risks
+
+Shape 31 (Text 26) [x=2.95, y=2.57, w=1.15, h=0.4]:
+Cybersecurity
+
+Shape 32 (Text 27) [x=2.47, y=3.04, w=1.6, h=0.32]:
+Security gaps
+
+Shape 37 (Text 31) [x=4.82, y=2.57, w=1.15, h=0.4]:
+HR
+
+Shape 38 (Text 32) [x=4.34, y=3.04, w=1.6, h=0.32]:
+Workforce risks
+
+Shape 43 (Text 36) [x=1.08, y=3.62, w=1.15, h=0.4]:
+Tax
+
+Shape 44 (Text 37) [x=0.6, y=4.09, w=1.6, h=0.32]:
+Tax exposure
+
+Shape 49 (Text 41) [x=2.95, y=3.62, w=1.15, h=0.4]:
+Regulatory
+
+Shape 50 (Text 42) [x=2.47, y=4.09, w=1.6, h=0.32]:
+Legal compliance
+
+Shape 55 (Text 46) [x=4.82, y=3.62, w=1.15, h=0.4]:
+ESG
+
+Shape 56 (Text 47) [x=4.34, y=4.09, w=1.6, h=0.32]:
+Environmental & social
+
+Shape 57 (Text 48) [x=0.5, y=4.65, w=5.5, h=0.5]:
+Instead of one general AI system, each specialist agent focuses on risks relevant to its own domain.
+
+Shape 58 (Text 49) [x=6.3, y=1.05, w=3.2, h=0.3]:
+How an agent works
+
+Shape 60 (Text 51) [x=6.37, y=1.42, w=3.06, h=0.9]:
+Document Context
++ Domain Instructions
++ GPT-4o / GPT-4o-mini
+
+Shape 63 (Text 54) [x=6.37, y=2.52, w=3.06, h=0.42]:
+Specialized Agent (e.g. Finance)
+
+Shape 66 (Text 57) [x=6.37, y=3.14, w=3.06, h=0.65]:
+Structured Finding:
+Risk + Severity + Evidence + Citation
+
+Shape 67 (Text 58) [x=6.3, y=3.95, w=3.2, h=0.9]:
+LLM = underlying language intelligence.
+Agent = role + instructions + context + LLM + structured output.
+
+==============================
+SLIDE 4
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+How DealGuard AI Works – End-to-End
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+4
+
+Shape 3 (Text 3) [x=0.57, y=1.15, w=1.16, h=0.85]:
+User Uploads Documents
+
+Shape 6 (Text 6) [x=2.11, y=1.15, w=1.16, h=0.85]:
+Node.js Gateway
+
+Shape 9 (Text 9) [x=3.65, y=1.15, w=1.16, h=0.85]:
+Document Processing
+
+Shape 12 (Text 12) [x=5.19, y=1.15, w=1.16, h=0.85]:
+Text Extraction & Chunking
+
+Shape 15 (Text 15) [x=6.73, y=1.15, w=1.16, h=0.85]:
+Orchestrator
+
+Shape 18 (Text 18) [x=8.27, y=1.15, w=1.16, h=0.85]:
+9 Specialist AI Agents
+
+Shape 21 (Text 21) [x=8.27, y=2.6, w=1.16, h=0.85]:
+Synthesis Agent
+
+Shape 24 (Text 24) [x=6.73, y=2.6, w=1.16, h=0.85]:
+Quality Gate
+
+Shape 27 (Text 27) [x=5.19, y=2.6, w=1.16, h=0.85]:
+Risk Classification
+
+Shape 30 (Text 30) [x=3.65, y=2.6, w=1.16, h=0.85]:
+Report Agent
+
+Shape 33 (Text 33) [x=2.11, y=2.6, w=1.16, h=0.85]:
+React Dashboard
+
+Shape 36 (Text 36) [x=0.65, y=3.78, w=2.6, h=0.35]:
+Ingestion & chunking
+
+Shape 37 (Text 37) [x=0.65, y=4.12, w=2.6, h=0.95]:
+Supported: PDF, DOCX, XLSX, PPTX, TXT, CSV, MD. Large documents are split into smaller manageable text units before AI analysis.
+
+Shape 40 (Text 40) [x=3.7, y=3.78, w=2.6, h=0.35]:
+Orchestrator
+
+Shape 41 (Text 41) [x=3.7, y=4.12, w=2.6, h=0.95]:
+Acts as a manager that starts and coordinates the agents. Python asyncio runs them concurrently, helping reduce waiting time versus strictly sequential processing.
+
+Shape 44 (Text 44) [x=6.75, y=3.78, w=2.6, h=0.35]:
+Real-time updates
+
+Shape 45 (Text 45) [x=6.75, y=4.12, w=2.6, h=0.95]:
+Python engine → Redis Pub/Sub → Node.js → Socket.IO → React. Example event: “Finance Agent completed”.
+
+==============================
+SLIDE 5
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+From Findings to Decisions
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+5
+
+Shape 2 (Text 2) [x=0.5, y=1.08, w=2.9, h=0.3]:
+1  Cross-domain synthesis
+
+Shape 3 (Text 3) [x=3.55, y=1.08, w=2.9, h=0.3]:
+2  Quality Gate
+
+Shape 4 (Text 4) [x=6.6, y=1.08, w=2.9, h=0.3]:
+3  Risk classification
+
+Shape 6 (Text 6) [x=0.57, y=1.5, w=1.26, h=0.65]:
+Finance Agent
+→ High Debt
+
+Shape 8 (Text 8) [x=2.07, y=1.5, w=1.26, h=0.65]:
+Legal Agent
+→ Restrictive Covenant
+
+Shape 12 (Text 12) [x=0.67, y=2.62, w=2.56, h=0.4]:
+Synthesis Agent
+
+Shape 15 (Text 15) [x=0.57, y=3.32, w=2.76, h=0.7]:
+Cross-Domain Risk: high debt + restrictive covenant
+
+Shape 16 (Text 16) [x=0.5, y=4.08, w=2.9, h=0.35]:
+Some risks appear only when domains are connected.
+
+Shape 21 (Text 20) [x=4.02, y=1.5, w=2.4, h=0.42]:
+Citation present?
+
+Shape 26 (Text 24) [x=4.02, y=2.0, w=2.4, h=0.42]:
+Quote verifiable?
+
+Shape 31 (Text 28) [x=4.02, y=2.5, w=2.4, h=0.42]:
+Evidence supports severity?
+
+Shape 36 (Text 32) [x=4.02, y=3.0, w=2.4, h=0.42]:
+All domains completed?
+
+Shape 41 (Text 36) [x=4.02, y=3.5, w=2.4, h=0.42]:
+Duplicate / contradictory?
+
+Shape 42 (Text 37) [x=3.55, y=4.08, w=2.9, h=0.35]:
+Findings → Gate → Validated Findings → Report
+
+Shape 44 (Text 39) [x=6.67, y=1.5, w=0.46, h=0.36]:
+P0
+
+Shape 46 (Text 41) [x=7.35, y=1.5, w=2.08, h=0.36]:
+Most Serious
+
+Shape 48 (Text 43) [x=6.67, y=1.92, w=0.46, h=0.36]:
+P1
+
+Shape 50 (Text 45) [x=7.35, y=1.92, w=2.08, h=0.36]:
+High
+
+Shape 52 (Text 47) [x=6.67, y=2.34, w=0.46, h=0.36]:
+P2
+
+Shape 54 (Text 49) [x=7.35, y=2.34, w=2.08, h=0.36]:
+Medium
+
+Shape 56 (Text 51) [x=6.67, y=2.76, w=0.46, h=0.36]:
+P3
+
+Shape 58 (Text 53) [x=7.35, y=2.76, w=2.08, h=0.36]:
+Lower
+
+Shape 60 (Text 55) [x=6.67, y=3.35, w=2.76, h=0.32]:
+Go / Caution / No-Go
+
+Shape 63 (Text 58) [x=6.67, y=3.87, w=2.76, h=0.32]:
+Human Decision Maker
+
+Shape 65 (Text 60) [x=0.57, y=4.55, w=4.26, h=0.6]:
+Quality Gate is designed to improve the reliability and evidence quality of findings.
+
+Shape 67 (Text 62) [x=5.17, y=4.55, w=4.26, h=0.6]:
+DealGuard AI provides decision support; the final business decision remains with the human.
+
+==============================
+SLIDE 6
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+System Architecture & Technology Stack
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+6
+
+Shape 3 (Text 3) [x=0.57, y=1.1, w=1.56, h=0.55]:
+React Frontend
+
+Shape 6 (Text 6) [x=0.57, y=1.97, w=1.56, h=0.7]:
+Node.js / Express Gateway
+
+Shape 9 (Text 9) [x=0.57, y=2.99, w=1.56, h=0.55]:
+MongoDB
+
+Shape 12 (Text 12) [x=2.57, y=1.97, w=0.86, h=0.7]:
+Redis Pub/Sub
+
+Shape 16 (Text 16) [x=3.92, y=1.1, w=1.71, h=0.4]:
+FastAPI AI Engine
+
+Shape 19 (Text 19) [x=3.92, y=1.6, w=1.71, h=0.4]:
+Document Ingestion
+
+Shape 22 (Text 22) [x=3.92, y=2.1, w=1.71, h=0.4]:
+Orchestrator
+
+Shape 25 (Text 25) [x=3.92, y=2.6, w=1.71, h=0.4]:
+9 Specialist Agents
+
+Shape 28 (Text 28) [x=3.92, y=3.1, w=1.71, h=0.4]:
+Synthesis + Quality Gate
+
+Shape 31 (Text 31) [x=3.92, y=3.6, w=1.71, h=0.4]:
+Final Findings
+
+Shape 36 (Text 36) [x=6.53, y=1.2, w=1.15, h=0.4]:
+Frontend
+
+Shape 37 (Text 37) [x=6.05, y=1.72, w=1.58, h=1.28]:
+React
+Vite
+Axios
+Socket.IO Client
+D3.js
+
+Shape 42 (Text 41) [x=8.38, y=1.2, w=1.15, h=0.4]:
+Backend
+
+Shape 43 (Text 42) [x=7.9, y=1.72, w=1.58, h=1.28]:
+Node.js
+Express
+MongoDB / Mongoose
+Redis
+Socket.IO
+
+Shape 48 (Text 46) [x=6.53, y=3.25, w=1.15, h=0.4]:
+AI Engine
+
+Shape 49 (Text 47) [x=6.05, y=3.77, w=1.58, h=1.28]:
+Python
+FastAPI
+OpenAI GPT-4o / GPT-4o-mini
+asyncio
+
+Shape 54 (Text 51) [x=8.38, y=3.25, w=1.15, h=0.4]:
+Infrastructure
+
+Shape 55 (Text 52) [x=7.9, y=3.77, w=1.58, h=1.28]:
+Docker / Docker Compose
+Prometheus
+Grafana
+
+==============================
+SLIDE 7
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+What the User Sees:
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+7
+
+Shape 5 (Text 5) [x=0.65, y=1.16, w=4.4, h=0.3]:
+Deal / Report information
+
+Shape 8 (Text 8) [x=0.64, y=1.54, w=1.25, h=0.2]:
+AgentGrid
+
+Shape 20 (Text 20) [x=2.06, y=1.54, w=1.45, h=0.2]:
+Risk Heatmap
+
+Shape 39 (Text 39) [x=3.68, y=1.54, w=1.4, h=0.2]:
+Go / No-Go
+
+Shape 41 (Text 41) [x=3.82, y=2.0, w=1.11, h=0.5]:
+CAUTION
+
+Shape 44 (Text 44) [x=0.64, y=2.82, w=2.5, h=0.2]:
+Findings Table
+
+Shape 50 (Text 50) [x=3.31, y=2.82, w=1.77, h=0.2]:
+Cross-Reference Graph
+
+Shape 58 (Text 58) [x=5.6, y=1.08, w=3.9, h=0.3]:
+Expected impact (project goals)
+
+Shape 61 (Text 60) [x=6.02, y=1.45, w=3.5, h=0.36]:
+Faster first-pass analysis
+
+Shape 64 (Text 62) [x=6.02, y=1.87, w=3.5, h=0.36]:
+Structured multi-domain risk identification
+
+Shape 67 (Text 64) [x=6.02, y=2.29, w=3.5, h=0.36]:
+Evidence-backed findings
+
+Shape 70 (Text 66) [x=6.02, y=2.71, w=3.5, h=0.36]:
+Better visibility of cross-domain risks
+
+Shape 73 (Text 68) [x=6.02, y=3.13, w=3.5, h=0.36]:
+Real-time analysis progress
+
+Shape 76 (Text 70) [x=6.02, y=3.55, w=3.5, h=0.36]:
+Centralized decision-support dashboard
+
+Shape 79 (Text 72) [x=6.02, y=3.97, w=3.5, h=0.36]:
+Human stays in control of the final decision
+
+==============================
+SLIDE 8
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+Where AI Reduces Effort and Improves Due Diligence
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+8
+
+Shape 3 (Text 3) [x=0.57, y=1.05, w=3.76, h=0.38]:
+Traditional manual workflow
+
+Shape 5 (Text 5) [x=5.67, y=1.05, w=3.76, h=0.38]:
+DealGuard AI-assisted workflow
+
+Shape 7 (Text 7) [x=0.57, y=1.5, w=3.76, h=0.42]:
+Manual document review
+
+Shape 10 (Text 10) [x=5.67, y=1.5, w=3.76, h=0.42]:
+Structured document processing
+
+Shape 12 (Text 12) [x=0.57, y=2.0, w=3.76, h=0.42]:
+Separate domain reviews
+
+Shape 15 (Text 15) [x=5.67, y=2.0, w=3.76, h=0.42]:
+Parallel specialist-agent analysis
+
+Shape 17 (Text 17) [x=0.57, y=2.5, w=3.76, h=0.42]:
+Manual cross-domain consolidation
+
+Shape 20 (Text 20) [x=5.67, y=2.5, w=3.76, h=0.42]:
+AI-assisted risk synthesis
+
+Shape 22 (Text 22) [x=0.57, y=3.0, w=3.76, h=0.42]:
+Repeated evidence checking
+
+Shape 25 (Text 25) [x=5.67, y=3.0, w=3.76, h=0.42]:
+Quality Gate validation
+
+Shape 27 (Text 27) [x=0.57, y=3.5, w=3.76, h=0.42]:
+Manual report preparation
+
+Shape 30 (Text 30) [x=5.67, y=3.5, w=3.76, h=0.42]:
+Structured report generation
+
+Shape 32 (Text 32) [x=0.57, y=4.02, w=3.76, h=0.62]:
+Manual, document-heavy, coordination-intensive.
+
+Shape 34 (Text 34) [x=5.67, y=4.02, w=3.76, h=0.62]:
+Automated document preparation, concurrent AI analysis, centralized synthesis, structured validation, report generation.
+
+==============================
+SLIDE 9
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+What Improves with DealGuard AI?
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+9
+
+Shape 6 (Text 5) [x=0.62, y=1.78, w=1.5, h=0.5]:
+Speed
+
+Shape 7 (Text 6) [x=0.62, y=2.32, w=1.5, h=1.4]:
+Concurrent analysis can reduce waiting vs strictly sequential agent execution.
+
+Shape 12 (Text 12) [x=2.44, y=1.78, w=1.5, h=0.5]:
+Coverage
+
+Shape 13 (Text 13) [x=2.44, y=2.32, w=1.5, h=1.4]:
+Nine specialist agents examine documents from different business domains.
+
+Shape 18 (Text 19) [x=4.26, y=1.78, w=1.5, h=0.5]:
+Cross-domain insight
+
+Shape 19 (Text 20) [x=4.26, y=2.32, w=1.5, h=1.4]:
+Synthesis Agent connects related findings that isolated reviews may miss.
+
+Shape 24 (Text 26) [x=6.08, y=1.78, w=1.5, h=0.5]:
+Evidence traceability
+
+Shape 25 (Text 27) [x=6.08, y=2.32, w=1.5, h=1.4]:
+Citations and supporting quotes help trace findings to source documents.
+
+Shape 30 (Text 33) [x=7.9, y=1.78, w=1.5, h=0.5]:
+Structured decision support
+
+Shape 31 (Text 34) [x=7.9, y=2.32, w=1.5, h=1.4]:
+Risk classes and a central dashboard make findings easier to review.
+
+==============================
+SLIDE 10
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+DevOps & Deployment: From Development to Monitoring
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+10
+
+Shape 3 (Text 3) [x=0.57, y=1.05, w=0.96, h=0.85]:
+Development / Code
+
+Shape 6 (Text 6) [x=1.87, y=1.05, w=0.96, h=0.85]:
+Containerization (Docker)
+
+Shape 9 (Text 9) [x=3.17, y=1.05, w=0.96, h=0.85]:
+Service Config (Docker Compose)
+
+Shape 12 (Text 12) [x=4.47, y=1.05, w=0.96, h=0.85]:
+Application Deployment
+
+Shape 15 (Text 15) [x=5.77, y=1.05, w=0.96, h=0.85]:
+Guardrails-ChatBot Safety Layer
+
+Shape 18 (Text 18) [x=7.07, y=1.05, w=0.96, h=0.85]:
+Prometheus/
+Grafana Dashboards
+
+Shape 21 (Text 21) [x=8.37, y=1.05, w=0.96, h=0.85]:
+Troubleshooting & Improvement
+
+Shape 22 (Text 22) [x=0.5, y=2.05, w=9.0, h=0.28]:
+Supports the current architecture:
+
+Shape 24 (Text 24) [x=0.57, y=2.38, w=1.56, h=0.5]:
+React Frontend
+
+Shape 26 (Text 26) [x=2.4, y=2.38, w=1.56, h=0.5]:
+Node.js / Express Gateway
+
+Shape 28 (Text 28) [x=4.22, y=2.38, w=1.56, h=0.5]:
+Python FastAPI AI Engine
+
+Shape 30 (Text 30) [x=6.04, y=2.38, w=1.56, h=0.5]:
+MongoDB
+
+Shape 32 (Text 32) [x=7.87, y=2.38, w=1.56, h=0.5]:
+Redis
+
+Shape 35 (Text 35) [x=0.65, y=3.13, w=2.6, h=0.35]:
+Docker & Compose
+
+Shape 36 (Text 36) [x=0.65, y=3.47, w=2.6, h=1.0]:
+Docker packages services with their dependencies for consistent environments; Compose configures and runs multiple services together per the project configuration.
+
+Shape 39 (Text 39) [x=3.7, y=3.13, w=2.6, h=0.35]:
+Prometheus & Grafana
+
+Shape 40 (Text 40) [x=3.7, y=3.47, w=2.6, h=1.0]:
+Monitoring tools only: Prometheus collects metrics (when instrumentation and scraping are configured); Grafana visualizes them. They do not perform AI due diligence.
+
+Shape 43 (Text 43) [x=6.75, y=3.13, w=2.6, h=0.35]:
+Operational monitoring
+
+Shape 44 (Text 44) [x=6.75, y=3.47, w=2.6, h=1.0]:
+Helps developers identify service failures, resource issues and performance bottlenecks, supporting troubleshooting and improvement.
+
+==============================
+SLIDE 11
+==============================
+Shape 0 (Text 0) [x=0.5, y=0.28, w=9.0, h=0.7]:
+Future Scope
+
+Shape 1 (Text 1) [x=9.0, y=5.25, w=0.5, h=0.25]:
+11
+
+Shape 6 (Text 7) [x=1.08, y=1.53, w=1.5, h=0.45]:
+More formats & languages
+
+Shape 7 (Text 8) [x=0.62, y=2.07, w=1.93, h=0.85]:
+Expand document ingestion capabilities.
+
+Shape 12 (Text 12) [x=3.36, y=1.53, w=1.5, h=0.45]:
+Improved AI reliability
+
+Shape 13 (Text 13) [x=2.9, y=2.07, w=1.93, h=0.85]:
+Stronger evidence verification, citation validation and evaluation of findings.
+
+Shape 18 (Text 17) [x=5.64, y=1.53, w=1.5, h=0.45]:
+Human-in-the-loop review
+
+Shape 19 (Text 18) [x=5.18, y=2.07, w=1.93, h=0.85]:
+Domain experts review, correct and approve AI findings.
+
+Shape 24 (Text 22) [x=7.92, y=1.53, w=1.5, h=0.45]:
+Advanced risk analytics
+
+Shape 25 (Text 23) [x=7.46, y=2.07, w=1.93, h=0.85]:
+Trend analysis, cross-deal comparison, customizable risk scoring.
+
+Shape 30 (Text 27) [x=1.08, y=3.18, w=1.5, h=0.45]:
+Scalability
+
+Shape 31 (Text 28) [x=0.62, y=3.72, w=1.93, h=0.85]:
+Larger document collections and more simultaneous projects.
+
+Shape 36 (Text 32) [x=3.36, y=3.18, w=1.5, h=0.45]:
+Security & governance
+
+Shape 37 (Text 33) [x=2.9, y=3.72, w=1.93, h=0.85]:
+Stronger access controls, audit trails, protection of confidential documents.
+
+Shape 42 (Text 37) [x=5.64, y=3.18, w=1.5, h=0.45]:
+Integration
+
+Shape 43 (Text 38) [x=5.18, y=3.72, w=1.93, h=0.85]:
+Enterprise document management, financial and compliance platforms.
+
+Shape 45 (Text 40) [x=7.41, y=3.1, w=2.01, h=1.5]:
+Goal: make DealGuard AI more reliable, scalable, secure and useful for real-world M&A teams.
+
+==============================
+SLIDE 12
+==============================
+Shape 0 (Text 0) [x=0.7, y=1.0, w=8.6, h=1.0]:
+Thank You
+
+Shape 2 (Text 2) [x=0.7, y=3.0, w=8.6, h=0.4]:
+DealGuard AI – AI Powered M&A Due Diligence Platform
+

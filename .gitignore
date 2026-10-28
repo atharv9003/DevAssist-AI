@@ -1,0 +1,71 @@
+# Environment variables & secrets (CRITICAL: Never commit .env)
+.env
+.env*.local
+.env.development
+.env.production
+.env.test
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+/lib/
+/lib64/
+!**/src/lib/**
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node & Next.js
+node_modules/
+.next/
+out/
+.npm
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.benchmarks/
+
+# Caching & Local State
+.devassist_cache/
+.devassist_index/
+data/faiss_index/
+data/rag_v2/
+*.log
+.pids/
+.pids
+.ngrok_url
+*.done
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.agents/
