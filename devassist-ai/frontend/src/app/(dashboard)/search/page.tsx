@@ -175,7 +175,7 @@ export default function CodeSearchPage() {
           top_k: topK,
           repo_name: targetRepo || undefined,
         }),
-        timeoutMs: 60_000,
+        timeoutMs: 120_000,
       });
       setResults(data);
       setSearchTime(Math.round(performance.now() - startTime));

@@ -94,37 +94,35 @@ async def startup_event():
     logger.info(f"DevAssist AI API v3.0 running on http://{settings.API_HOST}:{settings.API_PORT}")
     
     # --- Pyngrok Integration ---
-    try:
-        from pyngrok import ngrok  # type: ignore[import-not-found,import-untyped]
-        if settings.NGROK_AUTH_TOKEN:
-            ngrok.set_auth_token(settings.NGROK_AUTH_TOKEN)
-        else:
-            logger.warning("NGROK_AUTH_TOKEN not set — tunnel may be rate-limited")
-        ngrok.kill()  # Kill any stale tunnels from previous runs
-        tunnel = ngrok.connect(settings.API_PORT)
-        public_url = tunnel.public_url
-        webhook_url = f"{public_url}/api/v3/github/webhook"
-
-        logger.info("=" * 60)
-        logger.info(f"ngrok tunnel active: {public_url}")
-        logger.info(f"GitHub Webhook URL : {webhook_url}")
-        logger.info("ACTION REQUIRED: Update your GitHub repo webhook to the URL above")
-        logger.info("  Settings → Webhooks → Edit → Payload URL")
-        logger.info("=" * 60)
-
-        # Save URL to file so it's easy to find after log scrolls away
+    if settings.NGROK_AUTH_TOKEN:
         try:
-            import pathlib
-            url_file = pathlib.Path(".ngrok_url")
-            url_file.write_text(
-                f"Webhook URL: {webhook_url}\nBase URL: {public_url}\n",
-                encoding="utf-8",
-            )
-            logger.info(f"ngrok URL saved to .ngrok_url")
-        except Exception:
-            pass
-    except Exception as e:
-        logger.warning(f"Failed to start ngrok tunnel: {e}")
+            from pyngrok import ngrok  # type: ignore[import-not-found,import-untyped]
+            ngrok.set_auth_token(settings.NGROK_AUTH_TOKEN)
+            ngrok.kill()  # Kill any stale tunnels from previous runs
+            tunnel = ngrok.connect(settings.API_PORT)
+            public_url = tunnel.public_url
+            webhook_url = f"{public_url}/api/v3/github/webhook"
+
+            logger.info("=" * 60)
+            logger.info(f"ngrok tunnel active: {public_url}")
+            logger.info(f"GitHub Webhook URL : {webhook_url}")
+            logger.info("ACTION REQUIRED: Update your GitHub repo webhook to the URL above")
+            logger.info("  Settings → Webhooks → Edit → Payload URL")
+            logger.info("=" * 60)
+
+            # Save URL to file so it's easy to find after log scrolls away
+            try:
+                import pathlib
+                url_file = pathlib.Path(".ngrok_url")
+                url_file.write_text(
+                    f"Webhook URL: {webhook_url}\nBase URL: {public_url}\n",
+                    encoding="utf-8",
+                )
+                logger.info(f"ngrok URL saved to .ngrok_url")
+            except Exception:
+                pass
+        except Exception as e:
+            logger.warning(f"Failed to start ngrok tunnel: {e}")
     # ---------------------------
 
     # Initialize DB — retry until Postgres is ready (handles "starting up" race condition)
@@ -164,10 +162,22 @@ async def startup_event():
             if repos:
                 logger.info(f"Dispatching RAG index updates for {len(repos)} active repositories...")
                 from workers.rag_worker import update_repo_rag_index
+                loop = asyncio.get_event_loop()
                 for repo in repos:
-                    update_repo_rag_index.delay(repo.id)
+                    loop.run_in_executor(None, update_repo_rag_index.delay, repo.id)
     except Exception as e:
         logger.warning(f"Failed to dispatch initial RAG index tasks: {e}")
+
+    # Pre-warm RAG embeddings in background executor to prevent first-query cold start timeout
+    def _warmup_embeddings():
+        try:
+            from rag.retriever import CodebaseRetriever
+            CodebaseRetriever(index_path=settings.FAISS_INDEX_PATH)
+            logger.info("RAG embeddings model pre-warmed successfully.")
+        except Exception as e:
+            logger.debug(f"RAG warmup non-critical notice: {e}")
+
+    asyncio.get_event_loop().run_in_executor(None, _warmup_embeddings)
 
     # Start SSE Keepalive is handled dynamically in subscribe()
 
