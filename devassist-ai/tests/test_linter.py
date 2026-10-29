@@ -40,8 +40,8 @@ class TestLinterMap:
 
     def test_unsupported_extension_returns_none(self):
         assert LINTER_MAP.get(".rb") is None
-        assert LINTER_MAP.get(".go") is None
-        assert LINTER_MAP.get(".rs") is None
+        assert LINTER_MAP.get(".php") is None
+        assert LINTER_MAP.get(".swift") is None
 
 
 class TestRunLinterDispatcher:
@@ -61,9 +61,12 @@ class TestRunLinterDispatcher:
 class TestLinterToolsList:
     """Verify LINTER_TOOLS includes all tools."""
 
-    def test_all_three_tools_present(self):
-        assert len(LINTER_TOOLS) == 3
+    def test_all_tools_present(self):
+        assert len(LINTER_TOOLS) == 6
         tool_names = {t.__name__ for t in LINTER_TOOLS}
         assert "pylint_analysis" in tool_names
         assert "eslint_analysis" in tool_names
         assert "checkstyle_analysis" in tool_names
+        assert "go_lint_analysis" in tool_names
+        assert "rust_lint_analysis" in tool_names
+        assert "cpp_lint_analysis" in tool_names

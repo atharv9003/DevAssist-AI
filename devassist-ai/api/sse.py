@@ -287,18 +287,26 @@ class SSEManager:
         Yields:
             SSE-formatted strings to stream to the client.
         """
+        r = _get_redis()
+        inprocess_queue = None
+        if not r:
+            inprocess_queue = asyncio.Queue(maxsize=self._max_queue_size)
+            async with self._lock:
+                if review_id not in self._queues:
+                    self._queues[review_id] = []
+                self._queues[review_id].append(inprocess_queue)
+
         # Send initial heartbeat so browser doesn't time out immediately
         yield format_sse_event(
             _make_event("connected", review_id, "SSE stream connected"),
             event="connected",
         )
 
-        r = _get_redis()
         if r:
             async for chunk in self._subscribe_redis(review_id, timeout_seconds):
                 yield chunk
         else:
-            async for chunk in self._subscribe_inprocess(review_id, timeout_seconds):
+            async for chunk in self._subscribe_inprocess(review_id, timeout_seconds, queue=inprocess_queue):
                 yield chunk
 
     async def _subscribe_redis(
@@ -380,14 +388,15 @@ class SSEManager:
         self,
         review_id: int,
         timeout_seconds: float,
+        queue: asyncio.Queue | None = None,
     ) -> AsyncGenerator[str, None]:
         """Fallback: subscribe via in-process asyncio.Queue (single-process only)."""
-        queue: asyncio.Queue = asyncio.Queue(maxsize=self._max_queue_size)
-
-        async with self._lock:
-            if review_id not in self._queues:
-                self._queues[review_id] = []
-            self._queues[review_id].append(queue)
+        if queue is None:
+            queue = asyncio.Queue(maxsize=self._max_queue_size)
+            async with self._lock:
+                if review_id not in self._queues:
+                    self._queues[review_id] = []
+                self._queues[review_id].append(queue)
 
         logger.info("SSE in-process subscriber started: review_id=%d", review_id)
 
