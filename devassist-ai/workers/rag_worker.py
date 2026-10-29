@@ -102,9 +102,18 @@ async def _update_repo_rag_index_async(repo_id: int) -> dict[str, Any]:
             rag_cfg = get_rag_settings()
             repo_files = []
             
+            EXCLUDED_BOILERPLATE_DOCS = {
+                "code_of_conduct.md", "contributing.md", "security.md",
+                "license.md", "licence.md", "issue_template.md",
+                "pull_request_template.md", "gitpod.md", "changelog.md",
+                "governance.md", "maintainers.md", "roadmap.md",
+            }
+            
             for root, dirs, files in os.walk(repo_path):
-                dirs[:] = [d for d in dirs if d not in ('.git', 'node_modules', '__pycache__', '.venv', 'dist', 'build', '.next')]
+                dirs[:] = [d for d in dirs if d not in ('.git', 'node_modules', '__pycache__', '.venv', 'dist', 'build', '.next', '.github')]
                 for file in files:
+                    if file.lower() in EXCLUDED_BOILERPLATE_DOCS:
+                        continue
                     ext = os.path.splitext(file)[1].lower()
                     if ext in rag_cfg.code_extensions:
                         file_path = os.path.join(root, file)

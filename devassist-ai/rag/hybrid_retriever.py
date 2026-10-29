@@ -369,10 +369,10 @@ class HybridRetriever:
             ]
 
         if mode == "dense":
-            return self._maybe_rerank(query, self._wrap_results(dense_hits, [], rrf_k, final_k))
+            return self._maybe_rerank(query, self._wrap_results(dense_hits, [], rrf_k, final_k, query=query))
         if mode == "bm25":
-            return self._maybe_rerank(query, self._wrap_results([], bm25_hits, rrf_k, final_k))
-        return self._maybe_rerank(query, self._wrap_results(dense_hits, bm25_hits, rrf_k, final_k))
+            return self._maybe_rerank(query, self._wrap_results([], bm25_hits, rrf_k, final_k, query=query))
+        return self._maybe_rerank(query, self._wrap_results(dense_hits, bm25_hits, rrf_k, final_k, query=query))
 
     def retrieve_as_context(self, query: str, k: Optional[int] = None) -> str:
         """Retrieve and format results as a plain-text context string.
@@ -447,8 +447,9 @@ class HybridRetriever:
         bm25_hits: list[tuple[CodeChunk, float]],
         rrf_k: int,
         final_k: int,
+        query: str = "",
     ) -> list[RetrievedChunk]:
-        """Fuse dense and BM25 results with RRF."""
+        """Fuse dense and BM25 results with RRF, balancing source code vs documentation."""
         # Build RRF score accumulator keyed by (file_path, start_line)
         scores: dict[tuple, RetrievedChunk] = {}
 
@@ -473,9 +474,49 @@ class HybridRetriever:
                 scores[k].bm25_rank = rank
             scores[k].rrf_score += _rrf_score(rank, rrf_k)
 
+        code_exts = {
+            ".py", ".js", ".ts", ".jsx", ".tsx", ".java", ".go", ".rs",
+            ".c", ".cpp", ".h", ".hpp", ".cs", ".rb", ".php", ".swift"
+        }
+        is_doc_query = bool(re.search(r"\b(readme|docs?|documentation|guide|license|conduct|contributing)\b", query, re.I))
+
+        # Boost source code chunks to prevent natural language prose in docs from crowding out real code
+        for r in scores.values():
+            ext = os.path.splitext(r.chunk.file_path)[1].lower()
+            is_code = (ext in code_exts) or bool(r.chunk.symbol_name) or (r.chunk.chunk_type in {"function", "class", "method", "interface", "struct"})
+            if is_code and not is_doc_query:
+                r.rrf_score *= 2.2
+
         # Sort by RRF score descending
         ranked = sorted(scores.values(), key=lambda r: r.rrf_score, reverse=True)
-        return ranked[:final_k]
+
+        if is_doc_query:
+            return ranked[:final_k]
+
+        # Enforce diversity: cap documentation (.md, .rst, .txt) chunks to at most 1 so source code is always prioritized
+        final_results: list[RetrievedChunk] = []
+        doc_count = 0
+        doc_cap = max(1, final_k // 4)
+
+        for r in ranked:
+            ext = os.path.splitext(r.chunk.file_path)[1].lower()
+            if ext in {".md", ".rst", ".txt"}:
+                if doc_count >= doc_cap:
+                    continue
+                doc_count += 1
+            final_results.append(r)
+            if len(final_results) >= final_k:
+                break
+
+        # Fallback if filtered results are fewer than final_k
+        if len(final_results) < final_k:
+            for r in ranked:
+                if r not in final_results:
+                    final_results.append(r)
+                    if len(final_results) >= final_k:
+                        break
+
+        return final_results
 
     def _maybe_rerank(
         self,

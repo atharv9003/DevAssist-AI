@@ -93,7 +93,7 @@ function parseContextChunks(contextStr: string): ParsedChunk[] {
 
 export default function CodeSearchPage() {
   const [query, setQuery] = useState("");
-  const [topK, setTopK] = useState(3);
+  const [topK, setTopK] = useState(5);
   const [repositories, setRepositories] = useState<RepositoryItem[]>([]);
   const [selectedRepo, setSelectedRepo] = useState<string>("");
   const [loading, setLoading] = useState(false);
@@ -260,6 +260,8 @@ export default function CodeSearchPage() {
                 <option value={2}>k = 2 chunks</option>
                 <option value={3}>k = 3 chunks</option>
                 <option value={5}>k = 5 chunks</option>
+                <option value={8}>k = 8 chunks</option>
+                <option value={10}>k = 10 chunks</option>
               </select>
             </div>
           </div>
