@@ -35,27 +35,29 @@ if (Test-Path "$PROJECT_DIR\.venv\Scripts\Activate.ps1") {
 }
 
 # -------------------------------------------
-# 2. Install dependencies (if needed)
+# 2. Check dependencies
 # -------------------------------------------
 Write-Host "[2/7] Checking dependencies..." -ForegroundColor Yellow
-python -c "import fastapi; import streamlit; import celery; import google.generativeai" 2>$null
+python -c "import fastapi; import celery; import google.genai" 2>$null
 if ($LASTEXITCODE -ne 0) {
     Write-Host "  Installing missing dependencies..." -ForegroundColor Yellow
-    & "$PROJECT_DIR\.venv\Scripts\pip.exe" install -r "$PROJECT_DIR\requirements.txt" --quiet
+    python -m pip install -r "$PROJECT_DIR\requirements.txt" --quiet
     Write-Host "  OK: Dependencies installed" -ForegroundColor Green
 } else {
     Write-Host "  OK: All dependencies found" -ForegroundColor Green
 }
 
 # -------------------------------------------
-# 3. Check / Start Redis via Docker
+# 3. Check Docker (Redis & Postgres)
 # -------------------------------------------
-Write-Host "[3/7] Checking Redis..." -ForegroundColor Yellow
-$redisRunning = docker ps --filter "name=devassist-redis" --format "{{.Names}}" 2>$null
-if ($redisRunning -eq "devassist-redis") {
-    Write-Host "  OK: Redis already running via Docker" -ForegroundColor Green
+Write-Host "[3/7] Checking Docker containers..." -ForegroundColor Yellow
+$dockerOk = docker ps --format "{{.Names}}" 2>$null
+if ($dockerOk -match "redis" -and $dockerOk -match "postgres") {
+    Write-Host "  OK: Docker Redis and Postgres are running" -ForegroundColor Green
 } else {
-    Write-Host "  Skipping Docker Redis start (assuming Redis is running natively or in WSL)..." -ForegroundColor Yellow
+    Write-Host "  Starting Redis & Postgres via Docker Compose..." -ForegroundColor Yellow
+    docker compose up -d redis postgres
+    Write-Host "  OK: Docker containers started" -ForegroundColor Green
 }
 
 # -------------------------------------------
@@ -145,23 +147,23 @@ Start-Sleep -Seconds 2
 Write-Host "  OK: Celery worker started (PID: $($celeryJob.Id))" -ForegroundColor Green
 
 # -------------------------------------------
-# 7. Start Streamlit Frontend (background)
+# 7. Start Next.js Frontend (background)
 # -------------------------------------------
-Write-Host "[7/7] Starting Streamlit frontend..." -ForegroundColor Yellow
-Stop-PortProcess -Port 8501
+Write-Host "[7/7] Starting Next.js frontend..." -ForegroundColor Yellow
+Stop-PortProcess -Port 3000
 
-$stJob = Start-Process -FilePath "python" `
-    -ArgumentList "-m streamlit run frontend/app.py --server.port 8501 --server.headless true" `
-    -WorkingDirectory $PROJECT_DIR `
+$feJob = Start-Process -FilePath "cmd.exe" `
+    -ArgumentList "/c npm run dev" `
+    -WorkingDirectory "$PROJECT_DIR\frontend" `
     -PassThru -WindowStyle Minimized
 
-$stJob.Id | Out-File "$pidDir\streamlit.pid" -Force
+$feJob.Id | Out-File "$pidDir\frontend.pid" -Force
 
-Write-Host "  Waiting for Streamlit..." -ForegroundColor DarkGray
-if (Wait-ForEndpoint -Url "http://localhost:8501") {
-    Write-Host "  OK: Streamlit running at http://localhost:8501 (PID: $($stJob.Id))" -ForegroundColor Green
+Write-Host "  Waiting for Next.js frontend..." -ForegroundColor DarkGray
+if (Wait-ForEndpoint -Url "http://localhost:3000") {
+    Write-Host "  OK: Next.js running at http://localhost:3000 (PID: $($feJob.Id))" -ForegroundColor Green
 } else {
-    Write-Host "  WARNING: Streamlit may not be ready yet - check logs" -ForegroundColor DarkYellow
+    Write-Host "  INFO: Next.js is starting up at http://localhost:3000" -ForegroundColor Green
 }
 
 # -------------------------------------------
@@ -169,10 +171,10 @@ if (Wait-ForEndpoint -Url "http://localhost:8501") {
 # -------------------------------------------
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "    DevAssist AI is READY!              " -ForegroundColor Cyan
+Write-Host "    DevAssist AI v3.0 is READY!         " -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
-Write-Host "  Frontend:  http://localhost:8501" -ForegroundColor White
+Write-Host "  Dashboard: http://localhost:3000/dashboard" -ForegroundColor White
 Write-Host "  API:       http://127.0.0.1:8000" -ForegroundColor White
 Write-Host "  API Docs:  http://127.0.0.1:8000/docs" -ForegroundColor White
 Write-Host "  Health:    http://127.0.0.1:8000/health" -ForegroundColor White
@@ -180,4 +182,4 @@ Write-Host ""
 Write-Host "  PIDs saved to .pids\ - run .\stop.ps1 to shut everything down." -ForegroundColor DarkGray
 Write-Host ""
 
-Start-Process "http://localhost:8501"
+Start-Process "http://localhost:3000/dashboard"

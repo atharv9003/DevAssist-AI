@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     """Central configuration loaded from .env file. All components import from here."""
 
     # --- LLM Provider Configuration ---
-    LLM_PROVIDER: str = Field(default="openai", description="Primary LLM provider: openai, anthropic, gemini, local")
-    LLM_MODEL: str = Field(default="gemini-2.0-flash", description="Default model name for the selected provider")
+    LLM_PROVIDER: str = Field(default="gemini", description="Primary LLM provider: openai, anthropic, gemini, local")
+    LLM_MODEL: str = Field(default="gemini-2.5-flash", description="Default model name for the selected provider")
     LLM_TEMPERATURE: float = Field(default=0.0, description="Default temperature for LLM calls")
     LLM_MAX_TOKENS: int = Field(default=4096, description="Default max tokens for LLM responses")
 

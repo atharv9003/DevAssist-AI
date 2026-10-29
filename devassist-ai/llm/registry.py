@@ -164,34 +164,30 @@ MODEL_REGISTRY: dict[str, dict] = {
 # --- Fallback Chains (task_type -> ordered list of models to try) ---
 FALLBACK_CHAINS: dict[str, list[str]] = {
     "code_review": [
+        "gemini-2.5-flash",
         "meta/llama-3.1-70b-instruct",
         "openai/gpt-oss-120b",
         "gpt-4o",
         "claude-3-5-sonnet-20241022",
-        "gemini-2.5-pro",
-        "gemini-2.0-flash",
         "llama3",
     ],
     "documentation": [
+        "gemini-2.5-flash",
         "meta/llama-3.1-70b-instruct",
         "openai/gpt-oss-120b",
         "claude-3-5-sonnet-20241022",
         "gpt-4o",
-        "gemini-2.5-pro",
-        "gemini-2.0-flash",
         "llama3",
     ],
     "general": [
+        "gemini-2.5-flash",
         "meta/llama-3.1-8b-instruct",
         "qwen2.5-7b-instruct",
         "gpt-4o-mini",
-        "gemini-2.5-flash",
-        "gemini-2.0-flash",
         "llama3",
     ],
     "context_distillation": [
         "gemini-2.5-flash",
-        "gemini-2.0-flash",
         "gpt-4o-mini",
         "claude-3-haiku-20240307",
         "meta/llama-3.1-8b-instruct",
@@ -199,7 +195,6 @@ FALLBACK_CHAINS: dict[str, list[str]] = {
     ],
     "finding_validation": [
         "gemini-2.5-flash",
-        "gemini-2.0-flash",
         "gpt-4o-mini",
         "claude-3-haiku-20240307",
         "meta/llama-3.1-8b-instruct",

@@ -20,6 +20,7 @@ import {
 import { LineChart, Line, ResponsiveContainer, Tooltip } from "recharts";
 import { useDashboardStore, Repository } from "@/lib/stores/dashboardStore";
 import { PageHeader, GlassCard, LoadingSpinner, EmptyState } from "@/components/ui/shared";
+import { TriggerReviewModal } from "@/components/TriggerReviewModal";
 
 function Sparkline({ color = "#6366f1" }: { color?: string }) {
   const data = [
@@ -79,9 +80,11 @@ function Modal({ title, children, onClose }: ModalProps) {
 function RepoCard({
   repo,
   onDelete,
+  onTriggerReview,
 }: {
   repo: Repository;
   onDelete: (id: number, name: string) => void;
+  onTriggerReview: (name: string) => void;
 }) {
   const reviewsCount = repo.reviewsCount ?? repo.reviews_count ?? 0;
   const openIssues = repo.openIssues ?? repo.open_issues ?? 0;
@@ -167,6 +170,15 @@ function RepoCard({
 
         {/* Right: actions */}
         <div className="flex items-center gap-2 shrink-0 flex-wrap">
+          <button
+            onClick={() => onTriggerReview(repo.full_name)}
+            className="flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-3 py-1.5 text-xs font-medium transition-colors cursor-pointer shadow-xs"
+            title="Trigger multi-LLM code review on this repository"
+          >
+            <Play className="h-3 w-3 fill-current" />
+            <span>Trigger Review</span>
+          </button>
+
           <Link href={`/search?repo=${encodeURIComponent(repo.full_name)}`}>
             <button
               className="flex items-center gap-1.5 rounded-md bg-muted hover:bg-muted/80 border border-border px-2.5 py-1.5 text-xs text-foreground transition-colors cursor-pointer"
@@ -211,6 +223,8 @@ export default function RepositoriesPage() {
   } = useDashboardStore();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isTriggerOpen, setIsTriggerOpen] = useState(false);
+  const [triggerRepoName, setTriggerRepoName] = useState<string | undefined>(undefined);
   const [fullName, setFullName] = useState("");
   const [defaultBranch, setDefaultBranch] = useState("main");
   const [provider, setProvider] = useState<"github" | "gitlab">("github");
@@ -290,13 +304,25 @@ export default function RepositoriesPage() {
         subtitle="Manage connected code repositories, configure review branches, and inspect FAISS vector embeddings."
         icon={GitBranch}
         action={
-          <button
-            onClick={() => setIsOpen(true)}
-            className="flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-3.5 py-1.5 text-xs font-medium transition-colors shadow-xs cursor-pointer"
-          >
-            <Plus className="h-3.5 w-3.5" />
-            <span>Connect Repository</span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                setTriggerRepoName(undefined);
+                setIsTriggerOpen(true);
+              }}
+              className="flex items-center gap-1.5 rounded-md bg-muted hover:bg-muted/80 border border-border px-3.5 py-1.5 text-xs font-medium text-foreground transition-colors cursor-pointer"
+            >
+              <Play className="h-3.5 w-3.5 fill-current text-primary" />
+              <span>Trigger Review</span>
+            </button>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-3.5 py-1.5 text-xs font-medium transition-colors shadow-xs cursor-pointer"
+            >
+              <Plus className="h-3.5 w-3.5" />
+              <span>Connect Repository</span>
+            </button>
+          </div>
         }
       />
 
@@ -332,10 +358,21 @@ export default function RepositoriesPage() {
                 setDeleteRepoId(id);
                 setDeleteRepoName(name);
               }}
+              onTriggerReview={(name) => {
+                setTriggerRepoName(name);
+                setIsTriggerOpen(true);
+              }}
             />
           ))}
         </div>
       )}
+
+      {/* Trigger Review Modal */}
+      <TriggerReviewModal
+        isOpen={isTriggerOpen}
+        onClose={() => setIsTriggerOpen(false)}
+        initialRepoName={triggerRepoName}
+      />
 
       {/* Add Repository Modal */}
       {isOpen && (

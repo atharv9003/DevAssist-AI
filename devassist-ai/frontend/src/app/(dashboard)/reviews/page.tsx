@@ -21,6 +21,7 @@ import Link from "next/link";
 import { formatDistanceToNow } from "date-fns";
 import { useDashboardStore, ReviewItem } from "@/lib/stores/dashboardStore";
 import { PageHeader, LoadingSpinner, StatusBadge, EmptyState } from "@/components/ui/shared";
+import { TriggerReviewModal } from "@/components/TriggerReviewModal";
 
 function getStatusIcon(status: string) {
   switch (status?.toLowerCase()) {
@@ -40,6 +41,7 @@ export default function ReviewsPage() {
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
   const [deleteConfirmId, setDeleteConfirmId] = useState<number | null>(null);
+  const [isTriggerOpen, setIsTriggerOpen] = useState(false);
 
   useEffect(() => {
     fetchReviews();
@@ -78,13 +80,19 @@ export default function ReviewsPage() {
         subtitle="Automated multi-LLM code reviews, security findings, and inline patch suggestions."
         icon={ListTodo}
         action={
-          <Link href="/repositories">
-            <button className="flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer shadow-xs">
-              <Plus className="h-3.5 w-3.5" />
-              <span>Trigger Review</span>
-            </button>
-          </Link>
+          <button
+            onClick={() => setIsTriggerOpen(true)}
+            className="flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer shadow-xs"
+          >
+            <Plus className="h-3.5 w-3.5" />
+            <span>Trigger Review</span>
+          </button>
         }
+      />
+
+      <TriggerReviewModal
+        isOpen={isTriggerOpen}
+        onClose={() => setIsTriggerOpen(false)}
       />
 
       {/* Filter & Search Bar */}
@@ -146,12 +154,13 @@ export default function ReviewsPage() {
               : "Connect a repository and trigger a scan to start receiving automated AI reviews."
           }
           action={
-            <Link href="/repositories">
-              <button className="flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-3.5 py-1.5 text-xs font-medium cursor-pointer">
-                <Plus className="h-3.5 w-3.5" />
-                <span>Go to Repositories</span>
-              </button>
-            </Link>
+            <button
+              onClick={() => setIsTriggerOpen(true)}
+              className="flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-3.5 py-1.5 text-xs font-medium cursor-pointer"
+            >
+              <Plus className="h-3.5 w-3.5" />
+              <span>Trigger Review</span>
+            </button>
           }
         />
       ) : (

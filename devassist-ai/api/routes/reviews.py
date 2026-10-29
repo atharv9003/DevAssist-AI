@@ -11,9 +11,11 @@ router = APIRouter(prefix="/reviews", tags=["Reviews"])
 # ── Schemas ─────────────────────────────────────────────────────────────
 
 class ReviewTriggerRequest(BaseModel):
-    provider: str
+    provider: str = "github"
     repo_full_name: str
-    pr_number: int
+    pr_number: Optional[int] = None
+    commit_sha: Optional[str] = None
+    title: Optional[str] = None
 
 class SuppressionRequest(BaseModel):
     reason: str = "False positive"
@@ -259,19 +261,22 @@ async def trigger_review_manually(
         )
         await session.commit()
 
-    # Build the same context dict the webhook handler produces
+    target_pr = request.pr_number if (request.pr_number is not None and request.pr_number > 0) else 0
+    title = request.title or (f"PR #{target_pr} (manual scan)" if target_pr > 0 else f"Branch Scan ({request.commit_sha[:7] if request.commit_sha else 'Latest Commit'})")
+
+    # Build context dict
     context = {
         "provider": request.provider,
         "project_path": request.repo_full_name,
-        "pr_number": request.pr_number,
-        "mr_iid": request.pr_number,
-        "mr_title": f"PR #{request.pr_number} (manual trigger)",
+        "pr_number": target_pr,
+        "mr_iid": target_pr,
+        "mr_title": title,
         "mr_author": "manual",
         "source_branch": "",
         "target_branch": "main",
         "is_draft": False,
-        "mr_url": "",
-        "last_commit_sha": "",
+        "mr_url": f"https://github.com/{request.repo_full_name}" + (f"/pull/{target_pr}" if target_pr > 0 else ""),
+        "last_commit_sha": request.commit_sha or "",
     }
 
     # Dispatch via Celery if available; otherwise run in-process bg task

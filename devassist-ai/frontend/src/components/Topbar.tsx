@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { useDashboardStore } from "@/lib/stores/dashboardStore";
+import { TriggerReviewModal } from "./TriggerReviewModal";
 
 interface TopbarProps {
   onOpenPalette: () => void;
@@ -35,6 +36,7 @@ const routeTitleMap: Record<string, string> = {
 export function Topbar({ onOpenPalette, onToggleMobileMenu }: TopbarProps) {
   const pathname = usePathname();
   const { statusData, analytics } = useDashboardStore();
+  const [isTriggerOpen, setIsTriggerOpen] = useState(false);
 
   const getPageTitle = () => {
     if (pathname.startsWith("/reviews/") && pathname !== "/reviews") {
@@ -100,16 +102,24 @@ export function Topbar({ onOpenPalette, onToggleMobileMenu }: TopbarProps) {
         </div>
 
         {/* Quick Action: New Review */}
-        <Link href="/repositories">
-          <button className="hidden sm:flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-2.5 py-1.5 text-xs font-medium transition-colors cursor-pointer shadow-xs">
-            <Plus className="h-3.5 w-3.5" />
-            <span>New Review</span>
-          </button>
-        </Link>
+        <button
+          type="button"
+          onClick={() => setIsTriggerOpen(true)}
+          className="hidden sm:flex items-center gap-1.5 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground px-2.5 py-1.5 text-xs font-medium transition-colors cursor-pointer shadow-xs"
+        >
+          <Plus className="h-3.5 w-3.5" />
+          <span>New Review</span>
+        </button>
 
         {/* Theme Toggle */}
         <ThemeToggle />
       </div>
+
+      {/* Trigger Review Modal */}
+      <TriggerReviewModal
+        isOpen={isTriggerOpen}
+        onClose={() => setIsTriggerOpen(false)}
+      />
     </header>
   );
 }

@@ -174,3 +174,61 @@ async def deactivate_repository(
 ):
     await RepositoryRepo.deactivate(session, repo_id)
     return {"message": f"Repository {repo_id} deactivated."}
+
+@router.get("/{repo_id}/pulls")
+async def list_repo_pulls(
+    repo_id: int,
+    session: AsyncSession = Depends(get_db_session)
+):
+    """List open and recent pull requests and latest commit from provider for this repository."""
+    repo = await RepositoryRepo.get_by_id(session, repo_id)
+    if not repo:
+        raise HTTPException(status_code=404, detail="Repository not found")
+
+    pulls_data = []
+    latest_commit_data = None
+
+    if repo.provider == ProviderType.GITHUB:
+        try:
+            from agents.tools.github_tool import get_github_client
+            client = get_github_client(repo_name=repo.full_name)
+            gh_repo = client.repo
+
+            # Fetch latest commit info
+            try:
+                commits = gh_repo.get_commits()
+                latest = commits[0]
+                latest_commit_data = {
+                    "sha": latest.sha[:7],
+                    "full_sha": latest.sha,
+                    "message": latest.commit.message.splitlines()[0] if latest.commit.message else "Latest commit",
+                    "author": latest.commit.author.name if latest.commit.author else "Unknown",
+                }
+            except Exception:
+                pass
+
+            # Fetch PRs safely
+            try:
+                pull_list = gh_repo.get_pulls(state="all", sort="updated", direction="desc")
+                for p in list(pull_list[:15]):
+                    pulls_data.append({
+                        "number": p.number,
+                        "title": p.title,
+                        "author": p.user.login if p.user else "Unknown",
+                        "state": p.state,
+                        "url": p.html_url,
+                        "created_at": p.created_at.isoformat() if p.created_at else None,
+                    })
+            except Exception:
+                pass
+        except Exception:
+            pass
+
+    return {
+        "repo_id": repo.id,
+        "repo_full_name": repo.full_name,
+        "provider": repo.provider,
+        "latest_commit": latest_commit_data,
+        "pulls": pulls_data,
+    }
+

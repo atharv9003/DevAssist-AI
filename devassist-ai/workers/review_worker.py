@@ -188,12 +188,15 @@ async def _run_review_async(context: dict[str, Any]) -> dict:
                         "deletions": del_lines,
                     })
         else:
-            try:
-                gh_repo = github_client.repo
-                pr_obj = gh_repo.get_pull(int(mr_iid))
-            except Exception as e:
-                logger.error(f"Failed to fetch PR #{mr_iid} on repo {project_path}: {e}")
-                raise
+            reviewable_files = []
+            gh_repo = github_client.repo
+            pr_obj = None
+
+            if mr_iid and int(mr_iid) > 0:
+                try:
+                    pr_obj = gh_repo.get_pull(int(mr_iid))
+                except Exception as e:
+                    logger.warning(f"Could not fetch PR #{mr_iid} on {project_path}: {e}. Falling back to latest commit scan.")
 
             SKIP_EXTENSIONS = {
                 '.class', '.pyc', '.pyo', '.o', '.so', '.dll', '.exe',
@@ -203,21 +206,53 @@ async def _run_review_async(context: dict[str, Any]) -> dict:
                 '.lock', '.map', '.min.js', '.min.css',
                 '.pdf', '.doc', '.docx',
             }
-            reviewable_files = []
-            for file in pr_obj.get_files():
-                if not file.patch:
-                    continue
-                ext = os.path.splitext(file.filename)[1].lower()
-                if ext in SKIP_EXTENSIONS:
-                    continue
-                reviewable_files.append({
-                    "filename": file.filename,
-                    "patch": file.patch,
-                    "status": file.status,
-                    "additions": file.additions,
-                    "deletions": file.deletions,
-                })
-            logger.info(f"Fetched {len(reviewable_files)} reviewable files from GitHub PR #{mr_iid}")
+
+            if pr_obj:
+                for file in pr_obj.get_files():
+                    if not file.patch:
+                        continue
+                    ext = os.path.splitext(file.filename)[1].lower()
+                    if ext in SKIP_EXTENSIONS:
+                        continue
+                    reviewable_files.append({
+                        "filename": file.filename,
+                        "patch": file.patch,
+                        "status": file.status,
+                        "additions": file.additions,
+                        "deletions": file.deletions,
+                    })
+                logger.info(f"Fetched {len(reviewable_files)} reviewable files from GitHub PR #{mr_iid}")
+            else:
+                # Review latest commit on default branch or specified SHA
+                try:
+                    target_commit = None
+                    commit_sha = context.get("last_commit_sha")
+                    if commit_sha:
+                        try:
+                            target_commit = gh_repo.get_commit(commit_sha)
+                        except Exception:
+                            pass
+                    if not target_commit:
+                        commits = gh_repo.get_commits()
+                        target_commit = commits[0]
+
+                    for file in target_commit.files:
+                        if not file.patch:
+                            continue
+                        ext = os.path.splitext(file.filename)[1].lower()
+                        if ext in SKIP_EXTENSIONS:
+                            continue
+                        reviewable_files.append({
+                            "filename": file.filename,
+                            "patch": file.patch,
+                            "status": file.status,
+                            "additions": file.additions,
+                            "deletions": file.deletions,
+                        })
+                    logger.info(f"Fetched {len(reviewable_files)} reviewable files from commit {target_commit.sha[:7]}")
+                except Exception as ce:
+                    logger.error(f"Failed to fetch commit files for {project_path}: {ce}")
+                    raise
 
         system_prompt = load_prompt("review_prompt")
         
@@ -478,7 +513,7 @@ async def _run_review_async(context: dict[str, Any]) -> dict:
             raw_summary = "\n".join(summaries) if summaries else f"Review completed. Found {len(all_findings)} issues across {len(reviewable_files)} files."
 
             # Post GitHub Comments
-            if provider == ProviderType.GITHUB and 'gh_repo' in locals():
+            if provider == ProviderType.GITHUB and 'gh_repo' in locals() and int(mr_iid) > 0:
                 try:
                     pr_obj = gh_repo.get_pull(int(mr_iid))
                     commit_sha = context.get("last_commit_sha", "")

@@ -47,7 +47,10 @@ function Stop-Service {
 # Stop API server (port 8000)
 Stop-Service -Name "API server" -Port 8000 -PidFile "$pidDir\api.pid"
 
-# Stop Streamlit (port 8501)
+# Stop Next.js frontend (port 3000)
+Stop-Service -Name "Next.js Frontend" -Port 3000 -PidFile "$pidDir\frontend.pid"
+
+# Stop Streamlit (legacy port 8501)
 Stop-Service -Name "Streamlit" -Port 8501 -PidFile "$pidDir\streamlit.pid"
 
 # Stop Celery worker (no port, PID file only)
