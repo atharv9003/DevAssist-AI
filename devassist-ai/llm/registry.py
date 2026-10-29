@@ -128,7 +128,14 @@ MODEL_REGISTRY: dict[str, dict] = {
     # },
 
     # --- Gemini ---
-    "gemini-2.5-pro": {
+    "gemini-3.5-flash": {
+        "provider": "gemini",
+        "context_window": 1048576,
+        "supports_tools": True,
+        "supports_json": True,
+        "supports_vision": True,
+    },
+    "gemini-3.5-flash-lite": {
         "provider": "gemini",
         "context_window": 1048576,
         "supports_tools": True,
@@ -136,13 +143,6 @@ MODEL_REGISTRY: dict[str, dict] = {
         "supports_vision": True,
     },
     "gemini-2.5-flash": {
-        "provider": "gemini",
-        "context_window": 1048576,
-        "supports_tools": True,
-        "supports_json": True,
-        "supports_vision": True,
-    },
-    "gemini-2.0-flash": {
         "provider": "gemini",
         "context_window": 1048576,
         "supports_tools": True,
@@ -164,6 +164,8 @@ MODEL_REGISTRY: dict[str, dict] = {
 # --- Fallback Chains (task_type -> ordered list of models to try) ---
 FALLBACK_CHAINS: dict[str, list[str]] = {
     "code_review": [
+        "gemini-3.5-flash",
+        "gemini-3.5-flash-lite",
         "gemini-2.5-flash",
         "meta/llama-3.1-70b-instruct",
         "openai/gpt-oss-120b",
@@ -172,6 +174,8 @@ FALLBACK_CHAINS: dict[str, list[str]] = {
         "llama3",
     ],
     "documentation": [
+        "gemini-3.5-flash",
+        "gemini-3.5-flash-lite",
         "gemini-2.5-flash",
         "meta/llama-3.1-70b-instruct",
         "openai/gpt-oss-120b",
@@ -180,6 +184,8 @@ FALLBACK_CHAINS: dict[str, list[str]] = {
         "llama3",
     ],
     "general": [
+        "gemini-3.5-flash",
+        "gemini-3.5-flash-lite",
         "gemini-2.5-flash",
         "meta/llama-3.1-8b-instruct",
         "qwen2.5-7b-instruct",
@@ -187,6 +193,8 @@ FALLBACK_CHAINS: dict[str, list[str]] = {
         "llama3",
     ],
     "context_distillation": [
+        "gemini-3.5-flash",
+        "gemini-3.5-flash-lite",
         "gemini-2.5-flash",
         "gpt-4o-mini",
         "claude-3-haiku-20240307",
@@ -194,6 +202,8 @@ FALLBACK_CHAINS: dict[str, list[str]] = {
         "qwen2.5-7b-instruct",
     ],
     "finding_validation": [
+        "gemini-3.5-flash",
+        "gemini-3.5-flash-lite",
         "gemini-2.5-flash",
         "gpt-4o-mini",
         "claude-3-haiku-20240307",

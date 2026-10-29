@@ -97,7 +97,7 @@ export function Topbar({ onOpenPalette, onToggleMobileMenu }: TopbarProps) {
         <div className="hidden xl:flex items-center gap-1.5 px-2 py-1 rounded-md border border-border bg-muted/30 text-[11px] font-mono text-muted-foreground">
           <Sparkles className="h-3 w-3 text-primary shrink-0" />
           <span className="text-foreground/90 font-medium">
-            {statusData?.llm_model || "gemini-2.5-flash"}
+            {statusData?.llm_model || "gemini-3.5-flash"}
           </span>
         </div>
 
